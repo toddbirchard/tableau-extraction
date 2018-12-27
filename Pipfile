@@ -13,6 +13,7 @@ flask="*"
 configparser="*"
 flask_redis="*"
 flask_session="*"
+xmltodict="*"
 
 
 [requires]
