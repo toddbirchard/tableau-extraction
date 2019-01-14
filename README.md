@@ -10,8 +10,8 @@
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat-square&colorA=36363e)
 [![GitHub Issues](https://img.shields.io/github/issues/toddbirchard/tableau-etl.svg?style=flat-square&colorA=36363e)](https://github.com/toddbirchard/tableau-etl/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/toddbirchard/tableau-etl.svg?style=flat-square&colorB=e3bb18&colorA=36363e)](https://github.com/toddbirchard/tableau-etl/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/tableau-etl.svg?style=flat-square&colorA=36363e)](https://github.com/toddbirchard/tableau-etl/network)\
-
-A Flask application which extends Tableau to be used as an ETL tool.
+[![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/tableau-etl.svg?style=flat-square&colorA=36363e)](https://github.com/toddbirchard/tableau-etl/network)
 
 ![Tableau](https://raw.githubusercontent.com/toddbirchard/tableau-etl/master/tableaugithub.jpg)
+
+A Flask application which extends Tableau to be used as an ETL tool.
