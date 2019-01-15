@@ -11,7 +11,8 @@
 [![GitHub Issues](https://img.shields.io/github/issues/toddbirchard/tableau-etl.svg?style=flat-square&colorA=36363e)](https://github.com/toddbirchard/tableau-etl/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/toddbirchard/tableau-etl.svg?style=flat-square&colorB=e3bb18&colorA=36363e)](https://github.com/toddbirchard/tableau-etl/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/tableau-etl.svg?style=flat-square&colorA=36363e)](https://github.com/toddbirchard/tableau-etl/network)
-
 ![Tableau](https://raw.githubusercontent.com/toddbirchard/tableau-etl/master/tableaugithub.jpg)
 
-A Flask application which extends Tableau to be used as an ETL tool.
+## Summary
+
+A Flask application which extends Tableau to be used as an ETL tool. Currently a work in progress. To learn more about the prupose of this project, take a look at our blog post: [Turning Tableau into an ETL Pipeline GUI](https://hackersandslackers.com/tableaus-rest-api-turning-tableau-into-an-etl-pipeline-gui/)
