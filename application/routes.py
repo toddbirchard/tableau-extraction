@@ -1,7 +1,7 @@
 from flask import current_app as app
 from flask import make_response
 import json
-from . import redis_store
+from . import r
 from . import main
 
 

@@ -1,10 +1,16 @@
 import requests
 import json
 import xml.etree.ElementTree as ET
+from . import r
 
 
 class ExtractTableauView:
     """Class instance for extracting a single Tableau View."""
+
+    __baseurl = r.get('baseurl')
+    __username = r.get('username')
+    __password = r.get('password')
+    __database = r.get('uri')
 
     def __init__(self, base_url, username, password, tableau_site):
         """Initialize Taleau site instance for pillaging sequence."""
@@ -54,12 +60,12 @@ class ExtractTableauView:
         """Retrieve core XML for interacting with Tableau."""
         headers = {'Content-Type': 'application/xml'}
         # Pass your username, password, and Tableau "site" name
-        body = '<tsRequest><credentials name="'+ self.user + '" password="'+ self.password + '" ><site contentUrl="' + self.sitename + '" /></credentials></tsRequest>'
+        body = '<tsRequest><credentials name="' + self.user + '" password="' + self.password + '" ><site contentUrl="' + self.sitename + '" /></credentials></tsRequest>'
         # Execute API request
         r = requests.post(self.url + '/api/3.0/auth/signin', auth=(self.user, self.password), headers=headers, data=body)
         root = ET.fromstring(r.content)
         return root
 
 
-tableau_view_extractor = ExtractView('[MyTaleauServerURL]', '[username]', '[password]', '[sitename]')
+tableau_view_extractor = ExtractTableauView()
 tableau_view_extractor.get_view('[ViewIDOfYourChoice')

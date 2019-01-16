@@ -19,6 +19,8 @@ class Config:
     # Database
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = configParser.get("DATABASE", "SQLALCHEMY_DATABASE_URI")
+    REDIS_URI = configParser.get("DATABASE", "REDIS_URI")
     # CREDENTIALS
-    USER = configParser.get("CREDENTIALS", "USER")
-    PASSWORD = configParser.get("CREDENTIALS", "PASSWORD")
+    BASE_URL = configParser.get("TABLEAU", "BASE_URL")
+    USERNAME = configParser.get("TABLEAU", "USERNAME")
+    PASSWORD = configParser.get("TABLEAU", "PASSWORD")

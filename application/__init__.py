@@ -3,31 +3,32 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_session import Session
 from flask_redis import FlaskRedis
 
+# Set global entities
+db = SQLAlchemy()
+r = FlaskRedis()
+
 
 def create_app():
     """Construct the core application."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object('config.Config')
 
-    # set db
-    db = SQLAlchemy()
-    redis_store = FlaskRedis()
-
     with app.app_context():
+        # Set up variables to be used globally
         db.init_app(app)
+        r.init_app(app, charset="utf-8", decode_responses=True)
 
         # Set global contexts
-        redis_store.uri = app.config['SQLALCHEMY_DATABASE_URI']
-        redis_store.gettoken = app.config['GET_TOKEN_ENDPOINT']
-        redis_store.listviews = app.config['LIST_VIEWS_ENDPOINT']
-        redis_store.getview = app.config['GET_VIEW_ENDPOINT']
-        # CREDENTIALS
-        redis_store.user = app.config['USER']
-        redis_store.password = app.config['PASSWORD']
-        # Initialize with vars
-        redis_store.init_app(app)
+        r.set('uri', app.config['SQLALCHEMY_DATABASE_URI'])
+        r.set('gettoken', app.config['GET_TOKEN_ENDPOINT'])
+        r.set('listviews', app.config['LIST_VIEWS_ENDPOINT'])
+        r.set('getview', app.config['GET_VIEW_ENDPOINT'])
+        r.set('baseurl',  app.config['BASE_URL'])
+        r.set('username',  app.config['USER'])
+        r.set('password', app.config['PASSWORD'])
 
         # Construct the data set
         from . import routes
+        from . import main
 
         return app
