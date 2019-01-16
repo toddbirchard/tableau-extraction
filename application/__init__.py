@@ -24,8 +24,9 @@ def create_app():
         r.set('listviews', app.config['LIST_VIEWS_ENDPOINT'])
         r.set('getview', app.config['GET_VIEW_ENDPOINT'])
         r.set('baseurl',  app.config['BASE_URL'])
-        r.set('username',  app.config['USER'])
+        r.set('username',  app.config['USERNAME'])
         r.set('password', app.config['PASSWORD'])
+        r.set('contenturl', app.config['CONTENT_URL'])
 
         # Construct the data set
         from . import routes

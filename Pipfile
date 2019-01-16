@@ -14,6 +14,9 @@ configparser="*"
 flask_redis="*"
 flask_session="*"
 xmltodict="*"
+bs4="*"
+lxml="*"
+tableauserverclient="*"
 
 
 [requires]

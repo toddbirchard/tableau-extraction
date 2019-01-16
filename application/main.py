@@ -1,7 +1,12 @@
 import requests
+from requests import Request, Session
 import json
 import xml.etree.ElementTree as ET
 from . import r
+from bs4 import BeautifulSoup
+from lxml.etree import fromstring
+from lxml import etree
+import tableauserverclient as TSC
 
 
 class ExtractTableauView:
@@ -11,61 +16,91 @@ class ExtractTableauView:
     __username = r.get('username')
     __password = r.get('password')
     __database = r.get('uri')
+    __contenturl = r.get('contenturl')
+    __tableau_auth = TSC.TableauAuth(r.get('username'), r.get('password'))
+    __server = TSC.Server(r.get('baseurl'))
 
-    def __init__(self, base_url, username, password, tableau_site):
-        """Initialize Taleau site instance for pillaging sequence."""
-        self.url = base_url
-        self.user = username
-        self.password = password
-        self.sitename = tableau_site
-        self.xml = self.initialize_tableau_request()
-        self.token = self.get_token()
-        self.site = self.get_site()
-        self.views = self.list_views()
 
-    def get_view(self, view):
+    '''__xml = cls.initialize_tableau_request()
+    __site = get_site()
+    __views = list_views()'''
+
+    @classmethod
+    def get_all_views(cls):
+        with cls.__server.auth.sign_in(cls.__tableau_auth):
+            all_views, pagination_item = cls.__server.views.get()
+            view_arr = [view.name for view in all_views]
+            view_ids = [view.id for view in all_views]
+            view_dict = dict(zip(view_arr, view_ids))
+            print(view_dict)
+            return view_dict
+
+    @classmethod
+    def get_view(cls, site, xml, view, token):
         """Get contents of a single view."""
-        headers = {'X-Tableau-Auth': self.token}
-        r = requests.get(self.url + '/api/3.0/sites/' + self.site +'/views/' + view + '/data', auth=(self.user, self.password), headers=headers)
-        print(r.content)
-        return r.content
+        headers = {'X-Tableau-Auth': token,
+                   'Content-Type': 'application/x-www-form-urlencoded'
+                   }
+        prep = Request('GET', cls.__baseurl + '/api/3.2/sites/' + str(site) + '/views/' + str(view) + '/data', headers=headers)
+        prepped = prep.prepare()
+        print('prepped, ', prepped.url)
+        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + str(site) +'/views/' + str(view) + '/data', headers=headers)
+        print(req.content)
+        return req.content
 
-    def list_views(self):
+    @classmethod
+    def list_views(cls, site, xml, token):
         """Get all views belonging to a Tableau Site."""
-        headers = {'X-Tableau-Auth': self.token}
-        r = requests.get(self.url + '/api/3.0/sites/' + self.site +'/views', auth=(self.user, self.password), headers=headers)
-        root = ET.fromstring(r.content)
+        headers = {'X-Tableau-Auth': token}
+        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + site + '/views', auth=(cls.__username, cls.__password), headers=headers)
+        root = ET.fromstring(req.content)
         views_arr = []
         for child in root.iter('*'):
             if child.tag == '{http://tableau.com/api}views':
                 for view in child:
-                    views_arr.append(view.attrib.get('id'))
+                    view_dict = {
+                        'name': views_arr.append(view.attrib.get('name')),
+                        'id': views_arr.append(view.attrib.get('id'))
+                    }
         return views_arr
 
-    def get_token(self):
+    @classmethod
+    def get_token(cls, xml):
         """Receive Auth token to perform API requests."""
-        for child in self.xml.iter('*'):
+        for child in xml.iter('*'):
             if child.tag == '{http://tableau.com/api}credentials':
                 token = child.attrib.get('token')
                 return token
 
-    def get_site(self):
+    @classmethod
+    def get_site(cls, xml):
         """Retrieve ID of Tableau site instance."""
-        for child in self.xml.iter('*'):
+        root = xml
+        for child in root.iter('*'):
             if child.tag == '{http://tableau.com/api}site':
                 site = child.attrib.get('id')
+                print('site!!!!! = ', site)
                 return site
 
-    def initialize_tableau_request(self):
+    @classmethod
+    def initialize_tableau_request(cls):
         """Retrieve core XML for interacting with Tableau."""
         headers = {'Content-Type': 'application/xml'}
         # Pass your username, password, and Tableau "site" name
-        body = '<tsRequest><credentials name="' + self.user + '" password="' + self.password + '" ><site contentUrl="' + self.sitename + '" /></credentials></tsRequest>'
+        body = '<tsRequest><credentials name="' + cls.__username + '" password="' + cls.__password + '" ><site contentUrl="' + cls.__contenturl + '" /></credentials></tsRequest>'
         # Execute API request
-        r = requests.post(self.url + '/api/3.0/auth/signin', auth=(self.user, self.password), headers=headers, data=body)
-        root = ET.fromstring(r.content)
+        req = requests.post(cls.__baseurl + '/api/3.2/auth/signin', auth=(cls.__username, cls.__password), headers=headers, data=body)
+        root = ET.fromstring(req.content)
         return root
 
 
 tableau_view_extractor = ExtractTableauView()
-tableau_view_extractor.get_view('[ViewIDOfYourChoice')
+xml = tableau_view_extractor.initialize_tableau_request()
+print('xml = ', xml)
+token = tableau_view_extractor.get_token(xml)
+print('token = ', token)
+site = tableau_view_extractor.get_site(xml)
+print('site = ', site)
+views = tableau_view_extractor.list_views(site, xml, token)
+print('views = ', views)
+view = tableau_view_extractor.get_view(site, xml, '9a4a1de9-b7af-4a4a-8556-fd5ac82f92bd', token)
