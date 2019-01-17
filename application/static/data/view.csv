@@ -1,18 +1,334 @@
-,Category,City,Country,Customer Name,Manufacturer,Order ID,Postal Code,Product Name,Segment,Ship Mode,State,Sub-Category,Year of Order Date,Year of Ship Date
-0,Office Supplies,New York City,United States,Adam Bellavance,Acco,CA-2017-129714,10009,Acco Hanging Data Binders,Home Office,First Class,New York,Binders,2017,2017
-1,Office Supplies,Concord,United States,Adam Bellavance,Acme,CA-2017-161207,3301,Acme Forged Steel Scissors with Black Enamel Handles,Home Office,Standard Class,New Hampshire,Supplies,2017,2017
-2,Office Supplies,Greenwood,United States,Adam Bellavance,Ampad,CA-2018-118213,46142,"Ampad Gold Fibre Wirebound Steno Books, 6"" x 9"", Gregg Ruled",Home Office,First Class,Indiana,Paper,2018,2018
-3,Office Supplies,Greenwood,United States,Adam Bellavance,Easy-staple paper,CA-2018-118213,46142,Easy-staple paper,Home Office,First Class,Indiana,Paper,2018,2018
-4,Office Supplies,Waynesboro,United States,Adam Bellavance,Eureka,US-2017-108637,22980,"Eureka The Boss Lite 10-Amp Upright Vacuum, Blue",Home Office,Standard Class,Virginia,Appliances,2017,2017
-5,Office Supplies,New York City,United States,Adam Bellavance,GBC,CA-2017-129714,10009,GBC DocuBind P400 Electric Binding System,Home Office,First Class,New York,Binders,2017,2017
-6,Furniture,Seattle,United States,Adam Bellavance,Hon,CA-2018-107174,98105,Hon 2090 âPillow Softâ Series Mid Back Swivel/Tilt Chairs,Home Office,Standard Class,Washington,Chairs,2018,2018
-7,Furniture,Seattle,United States,Adam Bellavance,Hon,CA-2018-107174,98105,Hon 5100 Series Wood Tables,Home Office,Standard Class,Washington,Tables,2018,2018
-8,Furniture,Waynesboro,United States,Adam Bellavance,Howard Miller,US-2017-108637,22980,"Howard Miller 14-1/2"" Diameter Chrome Round Wall Clock",Home Office,Standard Class,Virginia,Furnishings,2017,2017
-9,Office Supplies,Waynesboro,United States,Adam Bellavance,Ibico,US-2017-108637,22980,Ibico Covers for Plastic or Wire Binding Elements,Home Office,Standard Class,Virginia,Binders,2017,2017
-10,Technology,Los Angeles,United States,Adam Bellavance,Logitech,CA-2018-159688,90004,Logitech G600 MMO Gaming Mouse,Home Office,Standard Class,California,Accessories,2018,2018
-11,Technology,New York City,United States,Adam Bellavance,Other,CA-2017-129714,10009,Sabrent 4-Port USB 2.0 Hub,Home Office,First Class,New York,Accessories,2017,2017
-12,Technology,Seattle,United States,Adam Bellavance,SanDisk,CA-2018-107174,98105,SanDisk Cruzer 64 GB USB Flash Drive,Home Office,Standard Class,Washington,Accessories,2018,2018
-13,Office Supplies,Greenwood,United States,Adam Bellavance,Strathmore,CA-2018-118213,46142,Strathmore Photo Mount Cards,Home Office,First Class,Indiana,Paper,2018,2018
-14,Office Supplies,Des Moines,United States,Adam Bellavance,Wirebound,CA-2016-150511,98198,"Wirebound Message Books, Four 2 3/4"" x 5"" Forms per Page, 600 Sets per Book",Home Office,Standard Class,Washington,Paper,2016,2016
-15,Office Supplies,New York City,United States,Adam Bellavance,Xerox,CA-2017-129714,10009,Xerox 1881,Home Office,First Class,New York,Paper,2017,2017
-16,Office Supplies,Philadelphia,United States,Adam Bellavance,Xerox,CA-2018-134173,19143,Xerox 231,Home Office,Standard Class,Pennsylvania,Paper,2018,2018
+,Current Assignee,Current Status,Day of Updated,epic_color,epic_name,Issue Type,issuetype_color,issuetype_url,key,Priority,project,summary
+0,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-96,Lowest,Hackers and Slackers,"""Recent Posts"" widget does not have link rollover"
+1,Todd Birchard,Backlog,"June 15, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-32,Lowest,Hackers and Slackers,âJoinâ page
+2,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-543,Medium,Hackers and Slackers,Add âpro tipâ box
+3,Todd Birchard,To Do,"December 14, 2018",#679EEF,SEO,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-656,Low,Hackers and Slackers,Add alt attributes to images vis clarifai 
+4,Todd Birchard,Backlog,"October 16, 2018",#FDDA3E,Accounts,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-473,Medium,Hackers and Slackers,Add avatar selection to signup
+5,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-231,Medium,Hackers and Slackers,Add blurb to each post page explaining what these are
+6,Todd Birchard,Done,"December 10, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-452,Medium,Hackers and Slackers,Add color styles for json snippets
+7,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-326,Medium,Hackers and Slackers,Add cool new social share buttons
+8,Todd Birchard,To Do,"December 10, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-645,High,Hackers and Slackers,Add cover to series tag page
+9,Todd Birchard,Backlog,"November 12, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-570,Medium,Hackers and Slackers,add little shadow border on tiny avis
+10,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-98,Medium,Hackers and Slackers,Add logic to pull issues via JIRA API
+11,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-189,Medium,Hackers and Slackers,Add margin to next-prev module on mobile posts page
+12,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-211,Medium,Hackers and Slackers,Add max width to footer
+13,Todd Birchard,Backlog,"November 16, 2018",#42526E,Widgets,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-535,Medium,Hackers and Slackers,Add medium clap functionality
+14,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-343,Medium,Hackers and Slackers,Add medium widget to author page
+15,Todd Birchard,Done,"June 7, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-73,Medium,Hackers and Slackers,Add new font awesome package
+16,Todd Birchard,Done,"December 10, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-589,Medium,Hackers and Slackers,Add newsletter widget to footer
+17,Todd Birchard,Backlog,"September 14, 2018",#57D9A3,Page Templates,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-331,High,Hackers and Slackers,Add page template to support Jupyter notebooks
+18,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-356,Medium,Hackers and Slackers,Add primary tag to recent posts widget; colorize tags
+19,Todd Birchard,Backlog,"September 17, 2018",#FFE380,Projects Page,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-369,Medium,Hackers and Slackers,Add project selector navbar to kanban
+20,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-402,Medium,Hackers and Slackers,Add reading time to post meta
+21,Todd Birchard,Done,"December 14, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-643,Medium,Hackers and Slackers,Add SORT functionality to series page
+22,Todd Birchard,Backlog,"November 5, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-540,Medium,Hackers and Slackers,Add thumbnails to related posts in footer
+23,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-342,Low,Hackers and Slackers,Add total task count to kanban
+24,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-439,Highest,Hackers and Slackers,Adjust logo
+25,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-195,Medium,Hackers and Slackers,adjust nav gradient
+26,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-193,Medium,Hackers and Slackers,Adjust post metadata to only display first name
+27,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-194,Medium,Hackers and Slackers,Adjust spacing between links on mobile nav
+28,Todd Birchard,Done,"December 10, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-453,Medium,Hackers and Slackers,Append detected language to header of code snippet
+29,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-583,Highest,Hackers and Slackers,Apply numcards change
+30,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-327,Medium,Hackers and Slackers,Apply post header to pages as well
+31,Todd Birchard,Done,"June 7, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-46,Medium,Hackers and Slackers,Archive old HS project; make a fork
+32,Todd Birchard,Done,"June 7, 2018",#FF8F73,Production,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-50,Medium,Hackers and Slackers,Archive old HS repos
+33,Todd Birchard,In Progress,"December 14, 2018",#4541E1,Dynamic Routing,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-179,Medium,Hackers and Slackers,Article X of Y in series
+34,Todd Birchard,Backlog,"November 5, 2018",#F785A0,Optimization ,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-556,Medium,Hackers and Slackers,Async and defer js
+35,Todd Birchard,Done,"November 13, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-551,Medium,Hackers and Slackers,Author card fuxking broken on posts page for some fucking reason
+36,Todd Birchard,Backlog,"November 5, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-542,Medium,Hackers and Slackers,Author page mobile: add social buttons to cover
+37,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-198,Medium,Hackers and Slackers,Author page template on mobile shows broken author widgets
+38,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-201,Medium,Hackers and Slackers,Author page: Create author Github cards
+39,Todd Birchard,To Do,"December 14, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-648,Lowest,Hackers and Slackers,Author small cards fonts are too small
+40,Todd Birchard,Backlog,"October 11, 2018",#79F2C0,Syndication,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-447,Medium,Hackers and Slackers,Auto post to medium
+41,Todd Birchard,Backlog,"November 25, 2018",#FDDA3E,Accounts,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-509,Low,Hackers and Slackers,Avatar generator for accounts
+42,Todd Birchard,Done,"June 7, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-68,Medium,Hackers and Slackers,AWS: Lambda GET functions
+43,Todd Birchard,Done,"June 7, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-67,Medium,Hackers and Slackers,AWS: Post functions
+44,Todd Birchard,Done,"December 10, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-524,Medium,Hackers and Slackers,Beautiful soup tutorial
+45,Todd Birchard,Backlog,"November 7, 2018",#F785A0,Optimization ,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-557,Medium,Hackers and Slackers,Begin encapsulating logic via Webpack
+46,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-468,Medium,Hackers and Slackers,Blockquote styles are broken
+47,Todd Birchard,Backlog,"November 29, 2018",#ADDE41,MongoDb,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-399,Medium,Hackers and Slackers,Blog comments
+48,Todd Birchard,Done,"June 7, 2018",#42526E,Refactor,Story,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-42,Medium,Hackers and Slackers,Bootstrap
+49,Todd Birchard,Done,"June 7, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-200,Medium,Hackers and Slackers,Building a kanban part 2
+50,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-472,Medium,Hackers and Slackers,Change avatar to square on author page
+51,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-191,Medium,Hackers and Slackers,Change inline a tag color from purple to green
+52,Todd Birchard,Backlog,"October 11, 2018",#ADDE41,MongoDb,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-475,Medium,Hackers and Slackers,Change mongodb jira logic to pull cards from jira endpoint
+53,Todd Birchard,Done,"June 7, 2018",#998DD9,Sendgrid,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-142,Medium,Hackers and Slackers,Change widget to collect email subscriptions
+54,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-654,Lowest,Hackers and Slackers,Change wording of âour projectsâ on projects page
+55,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-538,Medium,Hackers and Slackers,Check out mobile fig captions and margins here
+56,Todd Birchard,Backlog,"November 24, 2018",#F785A0,Optimization ,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-584,Medium,Hackers and Slackers,Cloudinary CDN
+57,Todd Birchard,Done,"December 11, 2018",#291BA9,Code snippets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-638,Medium,Hackers and Slackers,Code snippet headers donât display content (Firefox?)
+58,Todd Birchard,Done,"November 13, 2018",#291BA9,Code snippets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-490,Medium,Hackers and Slackers,Code snippets not expanding
+59,Todd Birchard,Backlog,"October 17, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-481,Medium,Hackers and Slackers,Compress author avatars
+60,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-307,Medium,Hackers and Slackers,Configuring DNS for Google Cloud
+61,Todd Birchard,Backlog,"August 15, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-336,Medium,Hackers and Slackers,Configuring your server to send SMTP emails
+62,Todd Birchard,Backlog,"October 9, 2018",#679EEF,SEO,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-306,Low,Hackers and Slackers,Content analyzer
+63,Todd Birchard,Done,"December 10, 2018",#FF8F73,Production,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-410,High,Hackers and Slackers,Convert legacy posts off of markdown formatting
+64,Todd Birchard,Done,"June 7, 2018",#57D9A3,Page Templates,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-157,Medium,Hackers and Slackers,Create excel series for max
+65,Todd Birchard,Done,"June 7, 2018",#FF8F73,Social,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-104,Lowest,Hackers and Slackers,Create Facebook page
+66,Todd Birchard,Backlog,"September 5, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-395,Medium,Hackers and Slackers,Create fallback image for posts with no image
+67,Todd Birchard,Backlog,"September 26, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-411,Medium,Hackers and Slackers,Create generic fallback image for unformatted posts
+68,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-227,Medium,Hackers and Slackers,Create images for mattâs lynx posts
+69,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-97,Medium,Hackers and Slackers,Create kanban frontend based on inspiration 
+70,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-401,Medium,Hackers and Slackers,create new lynx image for tomorrow
+71,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-353,Medium,Hackers and Slackers,Create new social share image
+72,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-515,Medium,Hackers and Slackers,Create upcoming lynx images
+73,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-147,Medium,Hackers and Slackers,Design kanban
+74,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-183,Medium,Hackers and Slackers,Embedded Post link previews
+75,Todd Birchard,Done,"November 13, 2018",#679EEF,SEO,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-480,Medium,Hackers and Slackers,Evenly distribute usage of H tags(consider sidebar)
+76,Todd Birchard,Done,"November 13, 2018",#4541E1,Dynamic Routing,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-374,Medium,Hackers and Slackers,Explore dynamic routing; reach a functional level
+77,Todd Birchard,Backlog,"October 9, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-408,Low,Hackers and Slackers,Featured post previews hide author name
+78,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-267,Medium,Hackers and Slackers,Fetch files from S3 using node
+79,Todd Birchard,Backlog,"November 7, 2018",#ADDE41,MongoDb,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-485,Low,Hackers and Slackers,Finish jira -> mongo automatic update 
+80,Todd Birchard,Done,"November 13, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-489,Low,Hackers and Slackers,Fix codeblock styles
+81,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-646,Medium,Hackers and Slackers,Fix footer margins
+82,Todd Birchard,Done,"November 13, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-497,High,Hackers and Slackers,Fix js snippet colors
+83,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-567,Medium,Hackers and Slackers,Fix Maxâs access
+84,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-498,Medium,Hackers and Slackers,Fix misc broken images in posts
+85,Todd Birchard,Done,"November 13, 2018",#ADDE41,MongoDb,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-470,Medium,Hackers and Slackers,Fix mongo modules on author page
+86,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-564,Medium,Hackers and Slackers,Fix Ryanâs access
+87,Todd Birchard,Backlog,"June 15, 2018",#00C7E6,Video,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-54,Lowest,Hackers and Slackers,Fix video post preview
+88,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-321,Medium,Hackers and Slackers,Flask mongodb
+89,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-287,Medium,Hackers and Slackers,Flask: Creating a flask app in Heroku 
+90,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-533,Highest,Hackers and Slackers,Footer is way too blue
+91,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-650,Medium,Hackers and Slackers,footer on mobile has a bit too much padding
+92,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-635,Medium,Hackers and Slackers,Footer widgets on mobile
+93,Todd Birchard,Backlog,"August 15, 2018",#FF8F73,Production,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-362,Medium,Hackers and Slackers,Frontend tests
+94,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-488,High,Hackers and Slackers,Gauge necessity of assets/js files; just add these to main.js bundle
+95,Todd Birchard,Backlog,"June 18, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-251,Medium,Hackers and Slackers,Ghost filtering
+96,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-647,Medium,Hackers and Slackers,GitHub repos donât go full width on mobile
+97,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-281,High,Hackers and Slackers,GitHub widget occasionally doesnât load
+98,Todd Birchard,Backlog,"September 22, 2018",#57D9A3,Page Templates,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-400,Medium,Hackers and Slackers,Glossary/Cheatsheet section
+99,Todd Birchard,Done,"November 13, 2018",#F785A0,Optimization ,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-477,Medium,Hackers and Slackers,Google Cloud Storage Module
+100,Todd Birchard,Backlog,"October 18, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-500,Medium,Hackers and Slackers,Google cloud storage to server transfer
+101,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-333,Medium,Hackers and Slackers,Graphic of The Wicked Witch of The West being melted?
+102,Todd Birchard,Backlog,"November 8, 2018",#F785A0,Optimization ,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-563,Medium,Hackers and Slackers,Gulp gzip
+103,Todd Birchard,Done,"June 7, 2018",#B3D4FF,Refactor,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-160,Medium,Hackers and Slackers,Gut bootstrap entirely
+104,Todd Birchard,Backlog,"September 22, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-296,Medium,Hackers and Slackers,Hacking JIRA: Automating with Scriptrunner
+105,Todd Birchard,Backlog,"July 21, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-295,Medium,Hackers and Slackers,Hacking JIRA: parsing emails into tickets
+106,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-289,Highest,Hackers and Slackers,Hacking tableau 1: postgres read access
+107,Todd Birchard,Backlog,"July 21, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-292,Medium,Hackers and Slackers,Hacking Tableau 2: Pulling view extracts with tabcmd
+108,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-291,Medium,Hackers and Slackers,Hacking Tableau 3: tabwqadmin access
+109,Todd Birchard,Backlog,"September 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-347,Medium,Hackers and Slackers,Hacking tableau part 3
+110,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-350,Medium,Hackers and Slackers,Handling forms in Flask
+111,Todd Birchard,Done,"December 10, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-605,Medium,Hackers and Slackers,Handling user authentication with zero code
+112,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-469,Medium,Hackers and Slackers,hide pagination above certain threshold on mobile
+113,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-253,Medium,Hackers and Slackers,Homepage: replace recent posts with series widget
+114,Todd Birchard,Backlog,"August 30, 2018",#FF8F73,Production,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-358,Medium,Hackers and Slackers,http://daodecode.com/2017/10/12/review-with-rating-snippets-on-ghost-blog/
+115,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-610,Medium,Hackers and Slackers,https://book.klipse.tech/
+116,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-611,Medium,Hackers and Slackers,https://developer.sphere-engine.com/integrations/compilers-widget
+117,Todd Birchard,Backlog,"October 1, 2018",#FF8F73,Production,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-423,Medium,Hackers and Slackers,https://github.com/alferov/awesome-gulp/blob/master/readme.md#live-reload
+118,Todd Birchard,Backlog,"October 1, 2018",#FF8F73,Production,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-425,Medium,Hackers and Slackers,https://github.com/lesshint/gulp-lesshint
+119,Todd Birchard,Backlog,"October 1, 2018",#FF8F73,Production,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-417,Medium,Hackers and Slackers,https://github.com/sindresorhus/gulp-size/blob/master/readme.md
+120,Todd Birchard,Backlog,"October 1, 2018",#FF8F73,Production,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-424,Medium,Hackers and Slackers,https://github.com/zalando/gulp-check-unused-css
+121,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-461,Low,Hackers and Slackers,https://hackersandslackers.com/hashicorp-packer/
+122,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-462,Medium,Hackers and Slackers,https://hackersandslackers.com/hashicorp-packer/
+123,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-123,Medium,Hackers and Slackers,https://hackersandslackers.com/links/
+124,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-116,Medium,Hackers and Slackers,https://hackersandslackers.com/lynx-roundup-april-22nd/
+125,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-460,Low,Hackers and Slackers,https://hackersandslackers.com/lynx-roundup-october-1st/
+126,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-465,Low,Hackers and Slackers,https://hackersandslackers.com/lynx-roundup-september-23rd/
+127,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-464,Lowest,Hackers and Slackers,https://hackersandslackers.com/lynx-roundup-september-24th/
+128,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-463,Lowest,Hackers and Slackers,https://hackersandslackers.com/lynx-roundup-september-26th/
+129,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-117,Medium,Hackers and Slackers,https://hackersandslackers.com/pandas-dataframe-drop/
+130,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-609,Medium,Hackers and Slackers,https://repl.it/site/docs/misc/quick-start
+131,Todd Birchard,Backlog,"October 11, 2018",#FFE380,Creative,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-314,Low,Hackers and Slackers,https://semantic-ui.com/
+132,Todd Birchard,Done,"November 13, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-546,Medium,Hackers and Slackers,HUGE: features image links are broken
+133,Todd Birchard,Backlog,"June 15, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-241,Medium,Hackers and Slackers,Iconv
+134,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-319,Medium,Hackers and Slackers,Image for Maxâs post
+135,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-532,Highest,Hackers and Slackers,images do not go full width on mobile posts
+136,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-459,Medium,Hackers and Slackers,Images to fix
+137,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-76,Low,Hackers and Slackers,Images: make all dolphins pink
+138,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-77,Medium,Hackers and Slackers,Images: replace lab lynx picture
+139,Todd Birchard,Done,"November 13, 2018",#B3D4FF,Refactor,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-153,Medium,Hackers and Slackers,Implement Gulp
+140,Todd Birchard,Done,"November 13, 2018",#FFE380,Projects Page,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-495,Medium,Hackers and Slackers,Implement kanban style fixes from earlier
+141,Todd Birchard,To Do,"December 7, 2018",#679EEF,SEO,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-569,Medium,Hackers and Slackers,Implement lynx endpoint mass deployment program
+142,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-203,Medium,Hackers and Slackers,Individual author page: perhaps hardcode social accounts into an author config file
+143,Ryan Rosado,Backlog,"July 11, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-274,Medium,Hackers and Slackers,install piwik on ubuntu dev
+144,Todd Birchard,Backlog,"October 11, 2018",#79F2C0,Syndication,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-126,Lowest,Hackers and Slackers,Integration: push posts to linkedin
+145,Todd Birchard,Backlog,"October 11, 2018",#79F2C0,Syndication,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-127,Low,Hackers and Slackers,Integration: push posts to medium 
+146,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-379,Medium,Hackers and Slackers,Italics; bold; and inline code missing from post previews.
+147,Todd Birchard,Backlog,"August 9, 2018",#57D9A3,Page Templates,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-354,Medium,Hackers and Slackers,Jupyter page type
+148,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Story,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-245,Medium,Hackers and Slackers,Kanban 1.1
+149,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Story,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-146,High,Hackers and Slackers,Kanban board
+150,Todd Birchard,Done,"November 13, 2018",#FFE380,Projects Page,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-361,Medium,Hackers and Slackers,Kanban board doesnât load properly on mobile the first time
+151,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-278,Low,Hackers and Slackers,Kanban h2 headers
+152,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Story,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-70,Medium,Hackers and Slackers,Kanban module on projects page
+153,Todd Birchard,Backlog,"August 6, 2018",#42526E,Widgets,Story,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-249,Low,Hackers and Slackers,Kanban Project Selection
+154,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-272,Medium,Hackers and Slackers,Kanban: fix border underline
+155,Todd Birchard,Backlog,"December 14, 2018",#F785A0,Optimization ,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-657,Low,Hackers and Slackers,Lazy load images
+156,Todd Birchard,Backlog,"October 17, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-506,Medium,Hackers and Slackers,Leverage author covers for author page and widgets
+157,Todd Birchard,Backlog,"June 15, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-53,Low,Hackers and Slackers,Link previews: Branding
+158,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-14,Low,Hackers and Slackers,Link roundup post preview
+159,Todd Birchard,Done,"November 13, 2018",#FFE380,Projects Page,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-328,Medium,Hackers and Slackers,List all projects under the hackers GitHub org 
+160,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-233,Medium,Hackers and Slackers,Look into Mattâs Instagram embed on mobile
+161,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-236,Medium,Hackers and Slackers,Lynx post image
+162,Todd Birchard,Backlog,"November 30, 2018",#57D9A3,Page Templates,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-612,Medium,Hackers and Slackers,Lynx summary
+163,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-539,Medium,Hackers and Slackers,Make author card cover photos larger
+164,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-215,Medium,Hackers and Slackers,Make author name bold on mobile
+165,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-565,Medium,Hackers and Slackers,make author social icons on mobile author cards larger
+166,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-345,Medium,Hackers and Slackers,Make avatar icons larger
+167,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-384,Medium,Hackers and Slackers,Make corrections to flask mongo tutorial
+168,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-239,Medium,Hackers and Slackers,Make footer padding smaller on mobile devices
+169,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-15,Medium,Hackers and Slackers,Make link corner marker lighter grey
+170,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-237,Medium,Hackers and Slackers,Make post preview h2 larger 
+171,Todd Birchard,Done,"November 13, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-491,Medium,Hackers and Slackers,Make sure undetected code snippets look good
+172,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-541,Medium,Hackers and Slackers,Make tag font smaller on related post footer widget
+173,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-140,Medium,Hackers and Slackers,Managing python packages
+174,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-264,Highest,Hackers and Slackers,Manually refresh medium with new posts
+175,Todd Birchard,In Progress,"December 14, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-663,High,Hackers and Slackers,Mapbox geocode
+176,Todd Birchard,Backlog,"November 30, 2018",#C0B6F2,Post Revisions,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-587,Low,Hackers and Slackers,Mass update of post imports into Medium
+177,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-235,Medium,Hackers and Slackers,Max post image
+178,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-344,High,Hackers and Slackers,Medium author widget 
+179,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-256,Medium,Hackers and Slackers,Meetup widget
+180,Todd Birchard,Backlog,"December 7, 2018",#ADDE41,MongoDb,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-620,Medium,Hackers and Slackers,Migrate from MongoDB to firebase
+181,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Story,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-232,Lowest,Hackers and Slackers,Minor visual tweaks
+182,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-204,Medium,Hackers and Slackers,Mobile branding appears on paged and tag templates
+183,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-496,Medium,Hackers and Slackers,Mobile footer: reduce padding; display less recent stories (or come up with something better)
+184,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-394,Medium,Hackers and Slackers,Mobile header: make links a smaller font size and mess with padding
+185,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-182,Medium,Hackers and Slackers,Mobile nav
+186,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-340,Medium,Hackers and Slackers,Mobile pages need mobile nav
+187,Todd Birchard,In Progress,"December 14, 2018",#C0B6F2,Post Revisions,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-262,Low,Hackers and Slackers,Modify âkanbanâ post
+188,Todd Birchard,Done,"June 7, 2018",#42526E,Refactor,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-44,Medium,Hackers and Slackers,Modify all margins and padding
+189,Todd Birchard,In Progress,"December 14, 2018",#ADDE41,MongoDb,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-664,Low,Hackers and Slackers,Mongodb Stitch via web pack
+190,Todd Birchard,Backlog,"November 25, 2018",#ADDE41,MongoDb,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-566,Medium,Hackers and Slackers,Mongodb: make sure anon users log in once only
+191,Todd Birchard,Backlog,"October 3, 2018",#F785A0,Optimization ,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-427,Medium,Hackers and Slackers,Move all mongo logic into separate JS files
+192,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-522,Medium,Hackers and Slackers,MySQL on GCLOUD plus apisentry
+193,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-360,Medium,Hackers and Slackers,Nav: make link fonts thicker (on homepage)
+194,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-572,Medium,Hackers and Slackers,New image for âdealing with xml in pythonâ
+195,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-575,Medium,Hackers and Slackers,New image for âit f it werenât for humanityâ
+196,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-576,Medium,Hackers and Slackers,New image for xml
+197,Todd Birchard,Done,"December 10, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-504,Medium,Hackers and Slackers,New related posts widgets
+198,Todd Birchard,Backlog,"June 16, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-248,Medium,Hackers and Slackers,New series: Jquery toolkit
+199,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-553,Medium,Hackers and Slackers,Next/prev buttons look like a massive turd all over the mobile site
+200,Todd Birchard,Done,"June 7, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-49,Highest,Hackers and Slackers,Obfuscate Auth
+201,Todd Birchard,Done,"November 13, 2018",#AB90F5,Revisions,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-508,Medium,Hackers and Slackers,Old posts: Python code indents on mobile are horrendous
+202,Todd Birchard,Backlog,"October 2, 2018",#57D9A3,Page Templates,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-368,Low,Hackers and Slackers,Older post types (non koenig) do not render full-width elements
+203,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-212,Medium,Hackers and Slackers,On ârelated postsâ widget; list all tags
+204,Todd Birchard,Backlog,"October 1, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-416,Medium,Hackers and Slackers,Optimize Gulp tasks
+205,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-197,Medium,Hackers and Slackers,Page template styles are completely broken on mobile 
+206,Todd Birchard,Done,"December 13, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-661,Highest,Hackers and Slackers,Pages not loading
+207,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-573,Highest,Hackers and Slackers,Pagination is broken
+208,Todd Birchard,Backlog,"October 11, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-339,Lowest,Hackers and Slackers,Pandas vectorize; apply
+209,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-252,Medium,Hackers and Slackers,Parsing xml with Python
+210,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-349,Highest,Hackers and Slackers,Pickshur of lazy pandas plz
+211,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-318,Medium,Hackers and Slackers,Picture of a raccoon?
+212,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-372,Medium,Hackers and Slackers,Pipenv
+213,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-185,Medium,Hackers and Slackers,Post author widget styling
+214,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-404,Medium,Hackers and Slackers,Post count not displaying on certain author pages
+215,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-184,Medium,Hackers and Slackers,Post footer social links donât link correctly bc they need redesign
+216,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-258,Medium,Hackers and Slackers,Post margins on mobile
+217,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-181,Medium,Hackers and Slackers,Post meta data spacing 
+218,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-268,Medium,Hackers and Slackers,Post page: author widget on mobile
+219,Todd Birchard,Backlog,"October 11, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-163,High,Hackers and Slackers,Post pages: link preview overlays
+220,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-332,Medium,Hackers and Slackers,post preview hides bold and italics etc
+221,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-621,Low,Hackers and Slackers,post preview mobike: larger tag size; lighter color
+222,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-633,Medium,Hackers and Slackers,Post preview mobile: title sizes are ridiculous
+223,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-392,Medium,Hackers and Slackers,Post preview: show author slug on mobile instead of full name
+224,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-282,Medium,Hackers and Slackers,Post-excerpt on mobile post page
+225,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-224,Medium,Hackers and Slackers,Postpreview title sizes
+226,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-228,High,Hackers and Slackers,Posts: Click image or code snippet to fullscreen
+227,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-196,Medium,Hackers and Slackers,Prev-next buttons still stacking on mobile
+228,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-279,Low,Hackers and Slackers,Projects h2
+229,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-81,Low,Hackers and Slackers,Projects page: add github repository cards for hackers and slackers org
+230,Todd Birchard,Done,"December 10, 2018",#C0B6F2,Post Revisions,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-585,Medium,Hackers and Slackers,Proofread this post
+231,Todd Birchard,Done,"December 10, 2018",#42526E,Widgets,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-636,Medium,Hackers and Slackers,Put GitHub repos on display
+232,Todd Birchard,Done,"November 13, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-492,Medium,Hackers and Slackers,Python indents are fucked up again
+233,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-323,Low,Hackers and Slackers,Python while loop pagination 
+234,Todd Birchard,Done,"December 10, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-554,Medium,Hackers and Slackers,Rebase git
+235,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-271,Low,Hackers and Slackers,Recent posts widget: 'date' font style
+236,Todd Birchard,To Do,"December 14, 2018",#57D9A3,Page Templates,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-622,Medium,Hackers and Slackers,Recommended Reading page (use pocket and medium)
+237,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-187,Low,Hackers and Slackers,Recreate all post images at larger aspect ratio
+238,Todd Birchard,Backlog,"October 2, 2018",#B3D4FF,Refactor,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-155,Medium,Hackers and Slackers,Recreate config.hbs
+239,Todd Birchard,Done,"December 11, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-655,Lowest,Hackers and Slackers,redesign lynx previews on mobile
+240,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-367,Lowest,Hackers and Slackers,redesign mobile pagination in flat material design
+241,Todd Birchard,Done,"December 10, 2018",#79F2C0,Content series,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-544,Medium,Hackers and Slackers,Redo tagging sitewide
+242,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-192,Medium,Hackers and Slackers,Reduce margin below posthead
+243,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-521,Medium,Hackers and Slackers,Reduce size of headers on tag pages
+244,Todd Birchard,Backlog,"September 2, 2018",#FFE380,Projects Page,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-359,Medium,Hackers and Slackers,Refactor âprojects pageâ JS
+245,Todd Birchard,Done,"December 10, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-454,Medium,Hackers and Slackers,Refine color scheme for python and js code snippets
+246,Todd Birchard,Done,"November 13, 2018",#00C7E6,Video,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-255,Medium,Hackers and Slackers,Refresh intro video
+247,Todd Birchard,Done,"June 7, 2018",#B3D4FF,Refactor,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-156,Medium,Hackers and Slackers,Remake entire less file structure; maybe separate into files
+248,Todd Birchard,Done,"December 11, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-653,Low,Hackers and Slackers,Remake excel series image
+249,Todd Birchard,Done,"December 10, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-594,Lowest,Hackers and Slackers,Remake Maxâs cover photo
+250,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-415,Medium,Hackers and Slackers,Remake series cards
+251,Todd Birchard,Backlog,"November 30, 2018",#ADDE41,MongoDb,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-571,Medium,Hackers and Slackers,Remodel jira mongo with references
+252,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-513,High,Hackers and Slackers,Remove ârecentâ widget from mobile footer
+253,Todd Birchard,Backlog,"November 5, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-487,Low,Hackers and Slackers,Remove ds_store from all git repos
+254,Todd Birchard,Done,"December 10, 2018",#F785A0,Optimization ,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-590,Medium,Hackers and Slackers,Remove old Twitter css
+255,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-261,High,Hackers and Slackers,Remove typekit fonts
+256,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-299,High,Hackers and Slackers,Replace series images
+257,Todd Birchard,Backlog,"October 8, 2018",#FFE380,Creative,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-438,Low,Hackers and Slackers,replace tables with semantic ui
+258,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-207,Medium,Hackers and Slackers,Replace user icon with author image
+259,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-579,Medium,Hackers and Slackers,Restyle config snippets
+260,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-578,Medium,Hackers and Slackers,Restyle javascript snippets
+261,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-172,High,Hackers and Slackers,Restyle post preview meta data: colored tags over icons
+262,Todd Birchard,Backlog,"November 15, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-580,Lowest,Hackers and Slackers,Restyle sql theme
+263,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-226,Medium,Hackers and Slackers,Revamp mongo post image
+264,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-329,Medium,Hackers and Slackers,Revise âdata save humanityâ image
+265,Todd Birchard,Backlog,"May 13, 2018",#C0B6F2,Post Revisions,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-35,Medium,Hackers and Slackers,Revisit pandas posts for accuracy
+266,Todd Birchard,Done,"December 10, 2018",#C0B6F2,Post Revisions,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-593,Medium,Hackers and Slackers,Rewrite AJAX post
+267,Todd Birchard,Backlog,"October 16, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-467,Lowest,Hackers and Slackers,Roadmap
+268,Todd Birchard,Backlog,"June 24, 2018",#57D9A3,Page Templates,Story,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-230,Medium,Hackers and Slackers,Roundup post template
+269,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-588,Medium,Hackers and Slackers,RSS feed validator
+270,Todd Birchard,Backlog,"October 3, 2018",#FFC400,Architecture,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-449,Medium,Hackers and Slackers,Run gulp forever with PM2
+271,Todd Birchard,Done,"November 13, 2018",#679EEF,SEO,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-510,Medium,Hackers and Slackers,SCRAPE LYNX
+272,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-428,Medium,Hackers and Slackers,Search box occasionally crashes app
+273,Todd Birchard,Done,"June 7, 2018",#998DD9,Sendgrid,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-161,Medium,Hackers and Slackers,Sent test sendgrid email to max and Matt 
+274,Todd Birchard,Backlog,"September 4, 2018",#E16141,Marketing,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-308,Medium,Hackers and Slackers,SEO audit
+275,Todd Birchard,Done,"November 13, 2018",#E16141,Marketing,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-305,Highest,Hackers and Slackers,Seo audit
+276,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-260,Highest,Hackers and Slackers,SEO Refresh
+277,Todd Birchard,Done,"June 7, 2018",#B3D4FF,Refactor,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-159,Medium,Hackers and Slackers,Separate posts from post previews
+278,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-637,Medium,Hackers and Slackers,Series list on mobile
+279,Todd Birchard,Done,"December 10, 2018",#FF8F73,Urgent,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-644,Medium,Hackers and Slackers,Series page images no longer loading
+280,Todd Birchard,Backlog,"September 22, 2018",#4541E1,Dynamic Routing,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-250,High,Hackers and Slackers,Series Posts Footer Widget
+281,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-164,Medium,Hackers and Slackers,Series template: Redesign series widgets
+282,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-106,Medium,Hackers and Slackers,Series Widget
+283,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-216,Medium,Hackers and Slackers,Series widget title is centered
+284,Todd Birchard,Done,"June 7, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-208,Medium,Hackers and Slackers,Series widgets look like shit
+285,Todd Birchard,Done,"November 13, 2018",#998DD9,Sendgrid,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-516,Medium,Hackers and Slackers,Set up sendgrid again
+286,Todd Birchard,Done,"December 10, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-474,Low,Hackers and Slackers,Setting up MySQL on Google Cloud (and using service for endpoints)
+287,Todd Birchard,Backlog,"September 4, 2018",#42526E,Widgets,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-302,Medium,Hackers and Slackers,Slack channel signups 
+288,Todd Birchard,Backlog,"November 25, 2018",#42526E,Widgets,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-514,Lowest,Hackers and Slackers,Slack widget 
+289,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-381,Medium,Hackers and Slackers,snippets: add css transition
+290,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-335,Medium,Hackers and Slackers,Some pagination pages have containers broken
+291,Todd Birchard,Done,"November 13, 2018",#291BA9,Code snippets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-493,Medium,Hackers and Slackers,something is wrong with ::before headers
+292,Todd Birchard,Backlog,"June 15, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-225,Low,Hackers and Slackers,SSH keep alive
+293,Todd Birchard,Done,"November 13, 2018",#291BA9,Code snippets,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-518,Medium,Hackers and Slackers,Steal code theme ideas
+294,Todd Birchard,Done,"November 13, 2018",#ADDE41,MongoDb,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-476,High,Hackers and Slackers,Store sensitive data in mongo values
+295,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-505,High,Hackers and Slackers,Table
+296,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-266,Medium,Hackers and Slackers,Text align h1 on post page
+297,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-234,Medium,Hackers and Slackers,text align justify on posts and pages
+298,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-12,Medium,Hackers and Slackers,Tools we love: parabola
+299,Todd Birchard,Backlog,"September 2, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-371,Medium,Hackers and Slackers,Tools we love: parabola; apify; unito
+300,Todd Birchard,Backlog,"October 11, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-99,Low,Hackers and Slackers,Tools we love: Plotly
+301,Todd Birchard,Backlog,"November 8, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-90,Medium,Hackers and Slackers,Tools we love: Unito
+302,Todd Birchard,Backlog,"December 14, 2018",#42526E,Widgets,Major Functionality,#93d171,https://hackers.nyc3.digitaloceanspaces.com/story.png,HACK-640,Low,Hackers and Slackers,Trending articles widget
+303,Todd Birchard,Done,"December 12, 2018",#42526E,Widgets,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-577,High,Hackers and Slackers,Try replacing linkpreview with homegrown endpoint
+304,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-338,High,Hackers and Slackers,Turn Tableau into an ETL tool via the REST API
+305,Todd Birchard,Done,"November 13, 2018",#FF8F73,Social,Integration,#f28b8a,https://hackers.nyc3.digitaloceanspaces.com/integration.png,HACK-277,High,Hackers and Slackers,Twitter/Facebook autopost tags
+306,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-406,Medium,Hackers and Slackers,Update config vars
+307,Todd Birchard,Done,"June 7, 2018",#C0B6F2,Post Revisions,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-102,Medium,Hackers and Slackers,Update share image to new logo
+308,Todd Birchard,Done,"June 7, 2018",#FF8F73,Production,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-47,Medium,Hackers and Slackers,Update Stockholm readme
+309,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-391,Medium,Hackers and Slackers,Upgrade to ghost 2.1
+310,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-276,Highest,Hackers and Slackers,Upgrade to NodeJS v8.9
+311,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-269,High,Hackers and Slackers,Upgrading to gulp 4
+312,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-396,Highest,Hackers and Slackers,Upload new lynx images to s3
+313,Todd Birchard,Backlog,"October 3, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-444,Medium,Hackers and Slackers,Use ghost pagination non package for desktop
+314,Todd Birchard,Done,"June 7, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-176,High,Hackers and Slackers,Using Gulp
+315,Todd Birchard,Done,"December 10, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-586,Medium,Hackers and Slackers,Using Gulp and imagemin
+316,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-270,High,Hackers and Slackers,Using handlebars with express
+317,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-351,High,Hackers and Slackers,Using Mongo Serverless Functions
+318,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-265,Highest,Hackers and Slackers,Using pandas with AWS Lambda
+319,Todd Birchard,Backlog,"September 16, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-373,Medium,Hackers and Slackers,Using plotly
+320,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-242,Medium,Hackers and Slackers,Using pymysql
+321,Todd Birchard,Backlog,"September 22, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-229,Lowest,Hackers and Slackers,Using routes in Expressjs
+322,Todd Birchard,Done,"December 10, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-442,Medium,Hackers and Slackers,Verify theme with gscan
+323,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Sub-task,#92BFE5,https://hackers.nyc3.digitaloceanspaces.com/subtask.png,HACK-238,Medium,Hackers and Slackers,vertical align author name with avatar on post preview
+324,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Bug,#db5d5d,https://hackers.nyc3.digitaloceanspaces.com/bug.png,HACK-180,Highest,Hackers and Slackers,Visual mobile bugs
+325,Todd Birchard,Done,"November 13, 2018",#FFE380,Creative,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-223,Low,Hackers and Slackers,visual update to post share footer
+326,Todd Birchard,Done,"November 13, 2018",#42526E,Widgets,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-101,Medium,Hackers and Slackers,Website widget
+327,Todd Birchard,Done,"November 13, 2018",#57D9A3,Page Templates,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-259,Highest,Hackers and Slackers,Wrap up author sidebar
+328,Todd Birchard,Done,"June 7, 2018",#FFE380,Creative,Idea,#eabb7c,https://hackers.nyc3.digitaloceanspaces.com/idea.png,HACK-177,Low,Hackers and Slackers,Wrap up header video
+329,Todd Birchard,Backlog,"September 14, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-386,Medium,Hackers and Slackers,Write google CDN tutorial
+330,Todd Birchard,Done,"November 13, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-511,Highest,Hackers and Slackers,Write google cloud functions post
+331,Todd Birchard,Backlog,"November 20, 2018",#998DD9,New Post,Content,#9e85bb,https://hackers.nyc3.digitaloceanspaces.com/content.png,HACK-545,Low,Hackers and Slackers,Writing modular python code
+332,Todd Birchard,Done,"November 13, 2018",#FF8F73,Production,Task,#73B0E1,https://hackers.nyc3.digitaloceanspaces.com/task.png,HACK-517,Medium,Hackers and Slackers,Yesterdayâs changes to figcaption and Li margin were overridden
