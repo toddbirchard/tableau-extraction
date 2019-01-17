@@ -30,6 +30,8 @@ def create_app():
 
         # Construct the data set
         from . import routes
-        from . import main
+        from . import tableau
+        app.register_blueprint(routes.home_blueprint)
+
 
         return app

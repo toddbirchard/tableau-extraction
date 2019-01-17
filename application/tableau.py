@@ -1,11 +1,7 @@
 import requests
-from requests import Request, Session
 import json
 import xml.etree.ElementTree as ET
 from . import r
-from bs4 import BeautifulSoup
-from lxml.etree import fromstring
-from lxml import etree
 import tableauserverclient as TSC
 
 
@@ -19,11 +15,6 @@ class ExtractTableauView:
     __contenturl = r.get('contenturl')
     __tableau_auth = TSC.TableauAuth(r.get('username'), r.get('password'))
     __server = TSC.Server(r.get('baseurl'))
-
-
-    '''__xml = cls.initialize_tableau_request()
-    __site = get_site()
-    __views = list_views()'''
 
     @classmethod
     def get_all_views(cls):
@@ -41,9 +32,6 @@ class ExtractTableauView:
         headers = {'X-Tableau-Auth': token,
                    'Content-Type': 'application/x-www-form-urlencoded'
                    }
-        prep = Request('GET', cls.__baseurl + '/api/3.2/sites/' + str(site) + '/views/' + str(view) + '/data', headers=headers)
-        prepped = prep.prepare()
-        print('prepped, ', prepped.url)
         req = requests.get(cls.__baseurl + '/api/3.2/sites/' + str(site) +'/views/' + str(view) + '/data', headers=headers)
         print(req.content)
         return req.content
@@ -59,9 +47,10 @@ class ExtractTableauView:
             if child.tag == '{http://tableau.com/api}views':
                 for view in child:
                     view_dict = {
-                        'name': views_arr.append(view.attrib.get('name')),
-                        'id': views_arr.append(view.attrib.get('id'))
+                        'name': view.attrib.get('name'),
+                        'id': view.attrib.get('id')
                     }
+                    views_arr.append(view_dict)
         return views_arr
 
     @classmethod
@@ -79,7 +68,6 @@ class ExtractTableauView:
         for child in root.iter('*'):
             if child.tag == '{http://tableau.com/api}site':
                 site = child.attrib.get('id')
-                print('site!!!!! = ', site)
                 return site
 
     @classmethod
@@ -94,7 +82,7 @@ class ExtractTableauView:
         return root
 
 
-tableau_view_extractor = ExtractTableauView()
+'''tableau_view_extractor = ExtractTableauView()
 xml = tableau_view_extractor.initialize_tableau_request()
 print('xml = ', xml)
 token = tableau_view_extractor.get_token(xml)
@@ -102,5 +90,4 @@ print('token = ', token)
 site = tableau_view_extractor.get_site(xml)
 print('site = ', site)
 views = tableau_view_extractor.list_views(site, xml, token)
-print('views = ', views)
-view = tableau_view_extractor.get_view(site, xml, '9a4a1de9-b7af-4a4a-8556-fd5ac82f92bd', token)
+print('views = ', views)'''

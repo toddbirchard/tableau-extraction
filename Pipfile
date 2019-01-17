@@ -17,7 +17,8 @@ xmltodict="*"
 bs4="*"
 lxml="*"
 tableauserverclient="*"
-
+flask_assets="*"
+libsass="*"
 
 [requires]
 python_version = "3.7.1"

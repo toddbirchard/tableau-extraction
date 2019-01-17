@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{{title}}</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='dist/all.css') }}" type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='dist/prism.css') }}" type="text/css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <script src="{{ url_for('static', filename='dist/packed.js') }}"></script>
+  <script src="{{ url_for('static', filename='dist/jquery-3-3-1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='dist/prism.js') }}"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      background: #e7ecf7 !important;
+      padding:0;
+    }
+
+    .container {
+      width: 95% !important;
+    }
+
+    .material-icons {
+      display: inline-block !important;
+    }
+
+    .nav-extended #nav-mobile a {
+      display: flex !important;
+    }
+
+    .nav-extended #nav-mobile i {
+      margin-right: 10px !important;
+    }
+
+    nav .brand-logo {
+      margin-left: 20px !important;
+    }
+
+    nav .brand-logo img {
+      max-width: 45px;
+      margin-right: 15px;
+    }
+
+    nav .brand-logo span {
+      font-size: .8em !important;
+    }
+
+    h1 {
+      font-family: 'ProductSans-Medium' !important;
+      font-weight: 100;
+      font-size: 1.3em;
+      color: #ffffff !important;
+      background: #2b64a5;
+      color: white !important;
+      margin-bottom: 40px;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      display: block;
+      width: -webkit-fill-available;
+      /* max-width: 100%; */
+      padding: 20px 0;
+      margin-top: 0 !important;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    body {
+      font-family: 'Lato' !important;
+      height: 100% !important;
+    }
+
+    html {
+      height: 100% !important;
+    }
+
+    a {
+      display: flex !important;
+      align-items: center !important;
+
+    }
+
+    .body-menu a {
+      color: #00689d;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    .body-menu .material-icons {
+      margin-right: 10px;
+    }
+
+    #map {
+      height: 800px;
+      width: -webkit-fill-available !important;
+      border: 1px solid #d2d2d2 !important;
+      box-shadow: 0 0 8px #cccccc;
+    }
+
+    .map-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.5);
+      opacity: 0;
+      transition: all .3s ease-out;
+      position: absolute;
+      color: white;
+      font-size: 2.5em;
+      text-shadow: -3px 3px 2px rgba(57, 59, 68, 0.8);
+      font-family: ProductSans-Medium;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      display: block;
+    }
+
+    .map-overlay:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .body-menu {
+      margin: 0 !important;
+    }
+
+    .body-menu li {
+      padding: 40px 20px !important;
+      width: 100% !important;
+      border-bottom: 1px solid #eaeaea !important;
+      transition: all .3s ease-out;
+      font-size: 1.1em;
+    }
+
+    .body-menu li:hover {
+      background: lightblue;
+    }
+
+    .extended-container {
+      padding: 0 20px;
+      margin: 40px auto 0;
+      background: white;
+      max-width: 1300px;
+      width: 90%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body class="{{template}}">
+  {% block content %}{% endblock %}
+</body>
+
+</html>
