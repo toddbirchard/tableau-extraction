@@ -1,10 +1,9 @@
 from flask import current_app as app
-from flask import render_template, Blueprint, request, redirect, Markup
+from flask import render_template, Blueprint, request, Markup
 from flask_assets import Bundle, Environment
 from . import tableau
 from . import database
 import pandas as pd
-
 
 home_blueprint = Blueprint('home', __name__, template_folder='templates', static_folder='static')
 
@@ -19,6 +18,7 @@ js.build()
 
 @home_blueprint.route('/', methods=['GET', 'POST'])
 def entry():
+    """Homepage which lists all available views."""
     tableau_view_extractor = tableau.ExtractTableauView()
     xml = tableau_view_extractor.initialize_tableau_request()
     token = tableau_view_extractor.get_token(xml)
@@ -37,6 +37,7 @@ def entry():
 
 @home_blueprint.route('/view', methods=['GET', 'POST'])
 def view():
+    """Displays a preview of a selected view."""
     site = request.args.get('site')
     xml = request.args.get('xml')
     view = request.args.get('view')
@@ -58,8 +59,8 @@ def view():
 
 @home_blueprint.route('/export', methods=['GET', 'POST'])
 def export():
+    """Exports view to external database."""
     view_df = pd.read_csv('application/static/data/view.csv')
-    print(view_df)
     view_df.to_sql(name='temp', con=database.engine, if_exists='replace', chunksize=50, index=True)
     return render_template(
         'export.html',

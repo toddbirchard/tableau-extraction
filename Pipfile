@@ -8,19 +8,15 @@ verify_ssl = true
 [packages]
 requests="*"
 flask_sqlalchemy="*"
-psycopg2="*"
 flask="*"
 configparser="*"
 flask_redis="*"
-xmltodict="*"
-lxml="*"
 tableauserverclient="*"
 flask_assets="*"
 libsass="*"
 pandas="*"
-dash_table="*"
 gunicorn="*"
-pymysql="*"
+mysql-connector-python="*"
 
 [requires]
 python_version = "3.7.1"

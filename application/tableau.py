@@ -1,8 +1,6 @@
 import requests
-import json
 import xml.etree.ElementTree as ET
 from . import r
-import tableauserverclient as TSC
 import pandas as pd
 import io
 
@@ -15,23 +13,6 @@ class ExtractTableauView:
     __password = r.get('password')
     __database = r.get('uri')
     __contenturl = r.get('contenturl')
-    __tableau_auth = TSC.TableauAuth(r.get('username'), r.get('password'))
-    __server = TSC.Server(r.get('baseurl'))
-
-    @classmethod
-    def get_all_views(cls):
-        with cls.__server.auth.sign_in(cls.__tableau_auth):
-            all_views, pagination_item = cls.__server.views.get()
-            view_arr = [view.name for view in all_views]
-            sub_dict = {
-                'id': [view.id for view in all_views],
-                'image': [view.preview_image for view in all_views],
-                'views': [view.total_views for view in all_views]
-            }
-            view_ids = [view.id for view in all_views]
-            view_dict = dict(zip(view_arr, sub_dict))
-            print(view_dict)
-            return view_dict
 
     @classmethod
     def get_view(cls, site, xml, view, token):

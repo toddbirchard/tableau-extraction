@@ -1,7 +1,6 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
 <div class="extended-container {{template}}">
   <div class="container">
     <div class="row">
@@ -12,14 +11,13 @@
         {% for view in views %}
         <div class="download">
           <a href="{{ url_for('home.view') }}?token={{token}}&site={{site}}&view={{view.id}}&xml={{xml}}">
-          <ul>
-            {% for key, value in view.items() %}
-            <li><span class="key {{key}}">{{key}}</span> {{ value }}</li>
-            {% endfor %}
-          </ul>
+            <ul>
+              {% for key, value in view.items() %}
+              <li><span class="key {{key}}">{{key}}</span> {{ value }}</li>
+              {% endfor %}
+            </ul>
           </a>
         </div>
-
         {% endfor %}
       </div>
     </div>
