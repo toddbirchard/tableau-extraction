@@ -31,7 +31,9 @@ def create_app():
         # Construct the data set
         from . import routes
         from . import tableau
+        from . import view_dash
         app.register_blueprint(routes.home_blueprint)
-
+        # app.register_blueprint(view_dash.view_blueprint)
+        # dash_app = view_dash.Add_Dash(app)
 
         return app

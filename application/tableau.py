@@ -21,8 +21,13 @@ class ExtractTableauView:
         with cls.__server.auth.sign_in(cls.__tableau_auth):
             all_views, pagination_item = cls.__server.views.get()
             view_arr = [view.name for view in all_views]
+            sub_dict = {
+                'id': [view.id for view in all_views],
+                'image': [view.preview_image for view in all_views],
+                'views': [view.total_views for view in all_views]
+            }
             view_ids = [view.id for view in all_views]
-            view_dict = dict(zip(view_arr, view_ids))
+            view_dict = dict(zip(view_arr, sub_dict))
             print(view_dict)
             return view_dict
 
@@ -48,7 +53,10 @@ class ExtractTableauView:
                 for view in child:
                     view_dict = {
                         'name': view.attrib.get('name'),
-                        'id': view.attrib.get('id')
+                        'id': view.attrib.get('id'),
+                        'url': cls.__baseurl + '/' + view.attrib.get('contentUrl'),
+                        'created': view.attrib.get('createdAt'),
+                        'updated': view.attrib.get('updatedAt')
                     }
                     views_arr.append(view_dict)
         return views_arr

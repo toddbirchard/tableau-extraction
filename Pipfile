@@ -19,6 +19,12 @@ lxml="*"
 tableauserverclient="*"
 flask_assets="*"
 libsass="*"
+dash_core_components="*"
+dash_html_components="*"
+dash="*"
+pandas="*"
+dash_table="*"
+gunicorn="*"
 
 [requires]
 python_version = "3.7.1"

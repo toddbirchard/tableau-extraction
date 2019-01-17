@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='dist/d3.js') }}"></script>
+<script type="text/javascript"charset="utf-8">
+          var data = d3.csvParse('{{view}}');
+
+          function(data) {
+                var parsedCSV = d3.csvParseRows(data);
+
+                var container = d3.select("body")
+                    .append("table")
+
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            };
+        </script>
+
+
+<div class="extended-container {{template}}">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1>{{title}}</h1>
+        {{view}}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
