@@ -3,6 +3,8 @@ import json
 import xml.etree.ElementTree as ET
 from . import r
 import tableauserverclient as TSC
+import pandas as pd
+import io
 
 
 class ExtractTableauView:
@@ -35,11 +37,13 @@ class ExtractTableauView:
     def get_view(cls, site, xml, view, token):
         """Get contents of a single view."""
         headers = {'X-Tableau-Auth': token,
-                   'Content-Type': 'application/x-www-form-urlencoded'
+                   'Content-Type': 'text/csv'
                    }
-        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + str(site) +'/views/' + str(view) + '/data', headers=headers)
-        print(req.content)
-        return req.content
+        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + str(site) +'/views/' + str(view) + '/data', headers=headers, stream=True)
+        csv_text = req.text
+        view_df = pd.read_csv(io.StringIO(csv_text))
+        print(view_df)
+        return view_df
 
     @classmethod
     def list_views(cls, site, xml, token):

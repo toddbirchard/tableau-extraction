@@ -1,13 +1,40 @@
-body, html {
+body,
+html {
   font-family: Lato;
   background: #e7ecf7 !important;
   padding: 0; }
+
+table thead tr {
+  background: #646483 !important;
+  color: white !important;
+  font-weight: 100 !important;
+  text-transform: uppercase !important;
+  font-size: 0.8em !important; }
+  table thead tr th {
+    border-radius: 0 !important;
+    text-align: center !important;
+    line-height: 1.2 !important; }
+
+table tbody {
+  box-shadow: 0 0 7px #bdbdd2 !important; }
+  table tbody tr {
+    border: 0 !important; }
+    table tbody tr:nth-child(even) {
+      background: #e7eefa !important; }
+    table tbody tr td {
+      max-width: 150px !important;
+      overflow: hidden !important;
+      padding: 15px 10px !important;
+      font-size: 0.8em !important;
+      line-height: 1.25 !important;
+      border-radius: 0 !important;
+      text-align: center !important; }
 
 .home-template .download {
   width: 48%;
   background: #eceff3;
   padding: 10px 30px;
-  transition: all .3s ease-out; }
+  transition: all 0.3s ease-out; }
   .home-template .download:hover {
     color: white !important;
     background: #039be5;
@@ -31,7 +58,7 @@ body, html {
 .home-template li {
   color: #3c3f48;
   line-height: 1.4;
-  font-size: .9em;
+  font-size: 0.9em;
   display: flex;
   margin-bottom: 2px;
   align-items: center; }
@@ -56,7 +83,7 @@ body, html {
   margin-right: 15px; }
 
 .home-template nav .brand-logo span {
-  font-size: .8em !important; }
+  font-size: 0.8em !important; }
 
 .home-template h1 {
   font-size: 1.3em;

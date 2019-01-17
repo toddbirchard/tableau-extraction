@@ -1,14 +1,12 @@
 from flask import current_app as app
-from flask import render_template, Blueprint, make_response, request, redirect
+from flask import render_template, Blueprint, make_response, request, redirect, Markup
 from flask_assets import Bundle, Environment
 import json
 from . import r
 from . import tableau
 import csv
-import pandas as pd
 
 home_blueprint = Blueprint('home', __name__, template_folder='templates', static_folder='static')
-
 
 assets = Environment(app)
 js = Bundle('js/*.js', filters='jsmin', output='dist/packed.js')
@@ -46,17 +44,10 @@ def view():
     token = request.args.get('token')
     tableau_view_extractor = tableau.ExtractTableauView()
     data_filepath = 'application/static/data/view.csv'
-    view = tableau_view_extractor.get_view(site, xml, view, token).decode('utf-8')
-    # view = view.split("\n")
-    with open(data_filepath, "w") as file:
-        writer = csv.writer(file)
-        for row in view:
-            row = row.replace('\""', '')
-            row = row.replace("\''", '')
-            writer.writerow(str(row))
+    view = tableau_view_extractor.get_view(site, xml, view, token)
     return render_template(
         'view.html',
-        title="Here are your views.",
+        title='Your View',
         template="home-template",
-        view=view
+        view=Markup(view.to_html(index=False))
     )
