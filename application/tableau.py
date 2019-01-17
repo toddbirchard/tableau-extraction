@@ -80,14 +80,3 @@ class ExtractTableauView:
         req = requests.post(cls.__baseurl + '/api/3.2/auth/signin', auth=(cls.__username, cls.__password), headers=headers, data=body)
         root = ET.fromstring(req.content)
         return root
-
-
-'''tableau_view_extractor = ExtractTableauView()
-xml = tableau_view_extractor.initialize_tableau_request()
-print('xml = ', xml)
-token = tableau_view_extractor.get_token(xml)
-print('token = ', token)
-site = tableau_view_extractor.get_site(xml)
-print('site = ', site)
-views = tableau_view_extractor.list_views(site, xml, token)
-print('views = ', views)'''
