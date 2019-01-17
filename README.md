@@ -15,4 +15,4 @@
 
 ## Summary
 
-A Flask application which extends Tableau to be used as an ETL tool. Currently a work in progress. To learn more about the prupose of this project, take a look at our blog post: [Turning Tableau into an ETL Pipeline GUI](https://hackersandslackers.com/tableaus-rest-api-turning-tableau-into-an-etl-pipeline-gui/)
+A Flask application which extends Tableau to be used as an ETL tool. Currently a work in progress. To learn more about the prupose of this project, take a look at our blog post: [The Hostile Extraction of Tableau Server Data](https://hackersandslackers.com/hostile-extraction-of-tableau-server-data/)
