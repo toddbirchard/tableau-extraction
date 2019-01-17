@@ -5,6 +5,21 @@ html {
   padding: 0;
 }
 
+.export {
+  display: block !important;
+  position: absolute !important;
+  width: 40px !important;
+  height: 40px !important;
+  top: 10px !important;
+  right: 10px !important;
+  font-size: 2em !important;
+  color: white !important;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
 table {
   thead {
     tr {
@@ -18,24 +33,26 @@ table {
         border-radius: 0 !important;
         text-align: center !important;
         line-height: 1.2 !important;
+        padding: 10px 5px !important;
       }
     }
   }
 
-  tbody{
+  tbody {
     box-shadow: 0 0 7px #bdbdd2 !important;
+
     tr {
       border: 0 !important;
 
       &:nth-child(even) {
-        background: #e7eefa !important
+        background: #e7eefa !important;
       }
 
       td {
         max-width: 150px !important;
         overflow: hidden !important;
         padding: 15px 10px !important;
-        font-size: 0.8em !important;
+        font-size: 0.73em !important;
         line-height: 1.25 !important;
         border-radius: 0 !important;
         text-align: center !important;
@@ -46,10 +63,15 @@ table {
 
 .home-template {
   .download {
-    width: 48%;
+    min-width: 49%;
     background: #eceff3;
     padding: 10px 30px;
     transition: all 0.3s ease-out;
+    margin-bottom: 20px;
+
+    @media(max-width:600px) {
+      width: 100% !important;
+    }
 
     &:hover {
       color: white !important;
@@ -61,11 +83,29 @@ table {
   .key {
     font-weight: 900;
     text-transform: uppercase;
+    margin-right: 20px;
+
+    &.name {
+          display: none;
+    }
   }
 
-  .name {
+  li {
+    color: #3c3f48;
+    line-height: 1.4;
+    font-size: 0.9em;
+    display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+
+    &:first-of-type {
+      font-size: 1.3em;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
     &::before {
-      content: "\f47f";
       display: inline-block;
       font-style: normal;
       font-variant: normal;
@@ -75,19 +115,80 @@ table {
       font-weight: 400;
       margin-right: 5px;
     }
-  }
 
-  li {
-    color: #3c3f48;
-    line-height: 1.4;
-    font-size: 0.9em;
-    display: flex;
-    margin-bottom: 2px;
-    align-items: center;
+    .id {
+      &::before {
+        content: "\f47f";
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+
+    .url {
+      &::before {
+        content: "\f0c1";
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+
+    .created {
+      &::before {
+        content: "\f319";
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+
+    .updated {
+      &::before {
+        content: "\f133";
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+
+    .name {
+      &::before {
+        content: "\f0ce";
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
   }
 
   .container {
-    width: 95% !important;
+    width: 100% !important;
   }
 
   .material-icons {
@@ -120,7 +221,6 @@ table {
     color: #ffffff !important;
     background: #2b64a5;
     color: white !important;
-    margin-bottom: 40px;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     display: block;
@@ -130,6 +230,7 @@ table {
     text-align: center;
     text-transform: uppercase;
     line-height: 1;
+    margin-bottom: 20px;
   }
 
   a {
@@ -137,18 +238,14 @@ table {
     align-items: center !important;
   }
 
-  .body-menu a {
-    color: #00689d;
-    font-weight: 600;
-    font-size: 1.1em;
-  }
-
-  .body-menu .material-icons {
-    margin-right: 10px;
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .extended-container {
-    padding: 0 20px;
     margin: 40px auto 0;
     background: white;
     max-width: 1300px;
@@ -156,5 +253,10 @@ table {
     height: 100%;
     overflow: hidden;
     position: relative;
+
+    @media(max-width: 600px) {
+      margin: 15px auto 0;
+      width: 95%;
+    }
   }
 }

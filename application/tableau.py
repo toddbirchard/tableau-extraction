@@ -41,7 +41,7 @@ class ExtractTableauView:
                    }
         req = requests.get(cls.__baseurl + '/api/3.2/sites/' + str(site) +'/views/' + str(view) + '/data', headers=headers, stream=True)
         csv_text = req.text
-        view_df = pd.read_csv(io.StringIO(csv_text))
+        view_df = pd.read_csv(io.StringIO(csv_text), header=0)
         print(view_df)
         return view_df
 

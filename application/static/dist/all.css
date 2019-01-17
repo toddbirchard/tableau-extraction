@@ -4,6 +4,18 @@ html {
   background: #e7ecf7 !important;
   padding: 0; }
 
+.export {
+  display: block !important;
+  position: absolute !important;
+  width: 40px !important;
+  height: 40px !important;
+  top: 10px !important;
+  right: 10px !important;
+  font-size: 2em !important;
+  color: white !important; }
+  .export:hover {
+    cursor: pointer; }
+
 table thead tr {
   background: #646483 !important;
   color: white !important;
@@ -13,7 +25,8 @@ table thead tr {
   table thead tr th {
     border-radius: 0 !important;
     text-align: center !important;
-    line-height: 1.2 !important; }
+    line-height: 1.2 !important;
+    padding: 10px 5px !important; }
 
 table tbody {
   box-shadow: 0 0 7px #bdbdd2 !important; }
@@ -25,16 +38,20 @@ table tbody {
       max-width: 150px !important;
       overflow: hidden !important;
       padding: 15px 10px !important;
-      font-size: 0.8em !important;
+      font-size: 0.73em !important;
       line-height: 1.25 !important;
       border-radius: 0 !important;
       text-align: center !important; }
 
 .home-template .download {
-  width: 48%;
+  min-width: 49%;
   background: #eceff3;
   padding: 10px 30px;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  margin-bottom: 20px; }
+  @media (max-width: 600px) {
+    .home-template .download {
+      width: 100% !important; } }
   .home-template .download:hover {
     color: white !important;
     background: #039be5;
@@ -42,29 +59,85 @@ table tbody {
 
 .home-template .key {
   font-weight: 900;
-  text-transform: uppercase; }
-
-.home-template .name::before {
-  content: "\f47f";
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 400;
-  margin-right: 5px; }
+  text-transform: uppercase;
+  margin-right: 20px; }
+  .home-template .key.name {
+    display: none; }
 
 .home-template li {
   color: #3c3f48;
   line-height: 1.4;
   font-size: 0.9em;
   display: flex;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   align-items: center; }
+  .home-template li:first-of-type {
+    font-size: 1.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 8px; }
+  .home-template li::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    margin-right: 5px; }
+  .home-template li .id::before {
+    content: "\f47f";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    margin-right: 5px; }
+  .home-template li .url::before {
+    content: "\f0c1";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    margin-right: 5px; }
+  .home-template li .created::before {
+    content: "\f319";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    margin-right: 5px; }
+  .home-template li .updated::before {
+    content: "\f133";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    margin-right: 5px; }
+  .home-template li .name::before {
+    content: "\f0ce";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    margin-right: 5px; }
 
 .home-template .container {
-  width: 95% !important; }
+  width: 100% !important; }
 
 .home-template .material-icons {
   display: inline-block !important; }
@@ -90,7 +163,6 @@ table tbody {
   color: #ffffff !important;
   background: #2b64a5;
   color: white !important;
-  margin-bottom: 40px;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   display: block;
@@ -99,22 +171,20 @@ table tbody {
   margin-top: 0 !important;
   text-align: center;
   text-transform: uppercase;
-  line-height: 1; }
+  line-height: 1;
+  margin-bottom: 20px; }
 
 .home-template a {
   display: flex !important;
   align-items: center !important; }
 
-.home-template .body-menu a {
-  color: #00689d;
-  font-weight: 600;
-  font-size: 1.1em; }
-
-.home-template .body-menu .material-icons {
-  margin-right: 10px; }
+.home-template .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .home-template .extended-container {
-  padding: 0 20px;
   margin: 40px auto 0;
   background: white;
   max-width: 1300px;
@@ -122,3 +192,7 @@ table tbody {
   height: 100%;
   overflow: hidden;
   position: relative; }
+  @media (max-width: 600px) {
+    .home-template .extended-container {
+      margin: 15px auto 0;
+      width: 95%; } }

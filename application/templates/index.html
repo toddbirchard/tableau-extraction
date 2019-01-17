@@ -8,17 +8,18 @@
       <div class="col s12">
         <h1>{{title}}</h1>
       </div>
-      <div class="col s12">
+      <div class="col s12 flex-container">
         {% for view in views %}
-        <a href="{{ url_for('home.view') }}?token={{token}}&site={{site}}&view={{view.id}}&xml={{xml}}">
         <div class="download">
+          <a href="{{ url_for('home.view') }}?token={{token}}&site={{site}}&view={{view.id}}&xml={{xml}}">
           <ul>
             {% for key, value in view.items() %}
-            <li><span class="key {{key}}">{{key}}</span>: {{ value }}</li>
+            <li><span class="key {{key}}">{{key}}</span> {{ value }}</li>
             {% endfor %}
           </ul>
+          </a>
         </div>
-      </a>
+
         {% endfor %}
       </div>
     </div>

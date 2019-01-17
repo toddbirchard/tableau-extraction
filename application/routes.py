@@ -1,10 +1,10 @@
 from flask import current_app as app
-from flask import render_template, Blueprint, make_response, request, redirect, Markup
+from flask import render_template, Blueprint, request, redirect, Markup
 from flask_assets import Bundle, Environment
-import json
-from . import r
 from . import tableau
-import csv
+from . import database
+import pandas as pd
+
 
 home_blueprint = Blueprint('home', __name__, template_folder='templates', static_folder='static')
 
@@ -19,7 +19,6 @@ js.build()
 
 @home_blueprint.route('/', methods=['GET', 'POST'])
 def entry():
-    headers = {'Content-Type': 'application/xml'}
     tableau_view_extractor = tableau.ExtractTableauView()
     xml = tableau_view_extractor.initialize_tableau_request()
     token = tableau_view_extractor.get_token(xml)
@@ -43,11 +42,27 @@ def view():
     view = request.args.get('view')
     token = request.args.get('token')
     tableau_view_extractor = tableau.ExtractTableauView()
-    data_filepath = 'application/static/data/view.csv'
-    view = tableau_view_extractor.get_view(site, xml, view, token)
+    view_df = tableau_view_extractor.get_view(site, xml, view, token)
+    view_df.to_csv('application/static/data/view.csv')
     return render_template(
         'view.html',
         title='Your View',
         template="home-template",
-        view=Markup(view.to_html(index=False))
+        view=view,
+        token=token,
+        xml=xml,
+        site=site,
+        view_df=Markup(view_df.to_html(index=False))
+    )
+
+
+@home_blueprint.route('/export', methods=['GET', 'POST'])
+def export():
+    view_df = pd.read_csv('application/static/data/view.csv')
+    print(view_df)
+    view_df.to_sql(name='temp', con=database.engine, if_exists='replace', chunksize=50, index=True)
+    return render_template(
+        'export.html',
+        title='Success!',
+        template="success-template",
     )
