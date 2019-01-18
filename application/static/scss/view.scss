@@ -1,0 +1,40 @@
+table {
+  thead {
+    tr {
+      background: #646483 !important;
+      color: white !important;
+      font-weight: 100 !important;
+      text-transform: uppercase !important;
+      font-size: 0.8em !important;
+
+      th {
+        border-radius: 0 !important;
+        text-align: center !important;
+        line-height: 1.2 !important;
+        padding: 10px 5px !important;
+      }
+    }
+  }
+
+  tbody {
+    box-shadow: 0 0 7px #bdbdd2 !important;
+
+    tr {
+      border: 0 !important;
+
+      &:nth-child(even) {
+        background: #e7eefa !important;
+      }
+
+      td {
+        max-width: 150px !important;
+        overflow: hidden !important;
+        padding: 15px 10px !important;
+        font-size: 0.73em !important;
+        line-height: 1.25 !important;
+        border-radius: 0 !important;
+        text-align: center !important;
+      }
+    }
+  }
+}

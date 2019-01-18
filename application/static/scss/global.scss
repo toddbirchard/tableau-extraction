@@ -1,0 +1,15 @@
+body,
+html {
+  font-family: Lato;
+  background: #e7ecf7 !important;
+  padding: 0;
+  background: linear-gradient(rgba(57, 51, 153, 0.39), rgba(157, 240, 233, 0.32)), url("https://hackers.nyc3.cdn.digitaloceanspaces.com/tableaubg.jpg") !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-blend-mode: hard-light;
+  height: 100% !important;
+}
+
+.row .col {
+  padding: 0 !important;
+}

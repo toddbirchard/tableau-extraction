@@ -16,7 +16,6 @@ libsass="*"
 pandas="*"
 gunicorn="*"
 mysql-connector-python="*"
-flask_cdn="*"
 jsmin="*"
 
 [requires]

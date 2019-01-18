@@ -16,6 +16,16 @@ scss.build(force=True, disable_cache=True)
 js.build(force=True, disable_cache=True)
 
 
+@home_blueprint.route('/nav.html', methods=['GET'])
+def nav():
+    """Builds nav before every template render."""
+    tableau_view_extractor = tableau.ExtractTableauView()
+    xml = tableau_view_extractor.initialize_tableau_request()
+    token = tableau_view_extractor.get_token(xml)
+    all_sites = tableau_view_extractor.list_sites(token)
+    return render_template('nav.html', all_sites=all_sites)
+
+
 @home_blueprint.route('/', methods=['GET', 'POST'])
 def entry():
     """Homepage which lists all available views."""
