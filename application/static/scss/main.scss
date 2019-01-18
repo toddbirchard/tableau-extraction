@@ -3,6 +3,11 @@ html {
   font-family: Lato;
   background: #e7ecf7 !important;
   padding: 0;
+  background: linear-gradient(rgba(57, 51, 153, 0.39), rgba(157, 240, 233, 0.32)), url("../img/bg.jpg") !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-blend-mode: hard-light;
+  height: 100% !important;
 }
 
 .export {
@@ -15,7 +20,7 @@ html {
   font-size: 2em !important;
   color: white !important;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
@@ -68,7 +73,6 @@ table {
     padding: 10px 30px;
     transition: all 0.3s ease-out;
     margin-bottom: 20px;
-
     @media(max-width:600px) {
       width: 100% !important;
     }
@@ -86,11 +90,11 @@ table {
     margin-right: 20px;
 
     &.name {
-          display: none;
+      display: none;
     }
   }
 
-  li {
+  .view-list-item {
     color: #3c3f48;
     line-height: 1.4;
     font-size: 0.9em;
@@ -217,20 +221,22 @@ table {
   }
 
   h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #ffffff !important;
-    background: #2b64a5;
+    background: #212b41;
+    text-align: left;
     color: white !important;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     display: block;
     width: -webkit-fill-available;
-    padding: 20px 0;
+    padding: 20px;
     margin-top: 0 !important;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 20px;
+    font-weight: 400;
   }
 
   a {
@@ -246,14 +252,14 @@ table {
   }
 
   .extended-container {
-    margin: 40px auto 0;
+    margin: 115px auto 0;
     background: white;
-    max-width: 1300px;
+    max-width: 1000px;
     width: 90%;
-    height: 100%;
+    height: 80%;
     overflow: hidden;
     position: relative;
-
+    padding: 30px;
     @media(max-width: 600px) {
       margin: 15px auto 0;
       width: 95%;

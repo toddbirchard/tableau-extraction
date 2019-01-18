@@ -1,8 +1,42 @@
+header {
+  background: #1a2337;
+  width: 100%;
+  height: 70px; }
+  header nav {
+    width: 23%;
+    color: white;
+    background: none;
+    padding: 20px;
+    box-shadow: none !important; }
+  header ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header ul li {
+      display: inline-block;
+      color: white;
+      line-height: 1;
+      height: fit-content;
+      font-size: 1em !important;
+      font-weight: 100; }
+  header i,
+  header .fal, header .far {
+    color: white;
+    font-size: 2.3em;
+    height: fit-content; }
+
 body,
 html {
   font-family: Lato;
   background: #e7ecf7 !important;
-  padding: 0; }
+  padding: 0;
+  background: linear-gradient(rgba(57, 51, 153, 0.39), rgba(157, 240, 233, 0.32)), url("../img/bg.jpg") !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-blend-mode: hard-light;
+  height: 100% !important; }
 
 .export {
   display: block !important;
@@ -64,19 +98,19 @@ table tbody {
   .home-template .key.name {
     display: none; }
 
-.home-template li {
+.home-template .view-list-item {
   color: #3c3f48;
   line-height: 1.4;
   font-size: 0.9em;
   display: flex;
   margin-bottom: 4px;
   align-items: center; }
-  .home-template li:first-of-type {
+  .home-template .view-list-item:first-of-type {
     font-size: 1.3em;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 8px; }
-  .home-template li::before {
+  .home-template .view-list-item::before {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -85,7 +119,7 @@ table tbody {
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     margin-right: 5px; }
-  .home-template li .id::before {
+  .home-template .view-list-item .id::before {
     content: "\f47f";
     display: inline-block;
     font-style: normal;
@@ -95,7 +129,7 @@ table tbody {
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     margin-right: 5px; }
-  .home-template li .url::before {
+  .home-template .view-list-item .url::before {
     content: "\f0c1";
     display: inline-block;
     font-style: normal;
@@ -105,7 +139,7 @@ table tbody {
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     margin-right: 5px; }
-  .home-template li .created::before {
+  .home-template .view-list-item .created::before {
     content: "\f319";
     display: inline-block;
     font-style: normal;
@@ -115,7 +149,7 @@ table tbody {
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     margin-right: 5px; }
-  .home-template li .updated::before {
+  .home-template .view-list-item .updated::before {
     content: "\f133";
     display: inline-block;
     font-style: normal;
@@ -125,7 +159,7 @@ table tbody {
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     margin-right: 5px; }
-  .home-template li .name::before {
+  .home-template .view-list-item .name::before {
     content: "\f0ce";
     display: inline-block;
     font-style: normal;
@@ -159,20 +193,22 @@ table tbody {
   font-size: 0.8em !important; }
 
 .home-template h1 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #ffffff !important;
-  background: #2b64a5;
+  background: #212b41;
+  text-align: left;
   color: white !important;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   display: block;
   width: -webkit-fill-available;
-  padding: 20px 0;
+  padding: 20px;
   margin-top: 0 !important;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-weight: 400; }
 
 .home-template a {
   display: flex !important;
@@ -185,13 +221,14 @@ table tbody {
   flex-wrap: wrap; }
 
 .home-template .extended-container {
-  margin: 40px auto 0;
+  margin: 115px auto 0;
   background: white;
-  max-width: 1300px;
+  max-width: 1000px;
   width: 90%;
-  height: 100%;
+  height: 80%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  padding: 30px; }
   @media (max-width: 600px) {
     .home-template .extended-container {
       margin: 15px auto 0;
