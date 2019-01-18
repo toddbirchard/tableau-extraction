@@ -25,7 +25,6 @@ def create_app():
 
         # Import our modules
         from . import routes
-        from . import tableau
         app.register_blueprint(routes.home_blueprint)
 
         return app

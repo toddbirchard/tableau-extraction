@@ -4,34 +4,44 @@ header {
   height: 70px;
 
   nav {
-    width: 23%;
+    width: 30%;
     color: white;
     background: none;
-    padding:20px;
+    padding: 20px;
     box-shadow: none !important;
-  }
+    min-width: 300px;
 
-  ul {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .leftNav {
+      ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    li {
-      display: inline-block;
-      color: white;
-      line-height: 1;
-      height: fit-content;
-      font-size: 1em !important;
-      font-weight: 100;
+        li {
+          display: inline-block;
+          color: white;
+          line-height: 1;
+          height: fit-content;
+          font-size: 1em !important;
+          font-weight: 300;
+        }
+      }
+
+      .logo {
+        color: white;
+        font-size: 2.3em;
+        height: fit-content;
+      }
     }
-  }
 
-  i,
-  .fal, .far {
-    color: white;
-    font-size: 2.3em;
-    height: fit-content;
+    .rightNav {
+      float: right;
+
+      i {
+        font-size: 1em;
+      }
+    }
   }
 }

@@ -2,3 +2,5 @@ config.ini
 data
 view.csv
 .webassets-cache
+img
+.DS_Store

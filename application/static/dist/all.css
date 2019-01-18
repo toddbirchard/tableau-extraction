@@ -3,40 +3,47 @@ header {
   width: 100%;
   height: 70px; }
   header nav {
-    width: 23%;
+    width: 30%;
     color: white;
     background: none;
     padding: 20px;
-    box-shadow: none !important; }
-  header ul {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    header ul li {
-      display: inline-block;
+    box-shadow: none !important;
+    min-width: 300px; }
+    header nav .leftNav ul {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header nav .leftNav ul li {
+        display: inline-block;
+        color: white;
+        line-height: 1;
+        height: fit-content;
+        font-size: 1em !important;
+        font-weight: 300; }
+    header nav .leftNav .logo {
       color: white;
-      line-height: 1;
-      height: fit-content;
-      font-size: 1em !important;
-      font-weight: 100; }
-  header i,
-  header .fal, header .far {
-    color: white;
-    font-size: 2.3em;
-    height: fit-content; }
+      font-size: 2.3em;
+      height: fit-content; }
+    header nav .rightNav {
+      float: right; }
+      header nav .rightNav i {
+        font-size: 1em; }
 
 body,
 html {
   font-family: Lato;
   background: #e7ecf7 !important;
   padding: 0;
-  background: linear-gradient(rgba(57, 51, 153, 0.39), rgba(157, 240, 233, 0.32)), url("../img/bg.jpg") !important;
+  background: linear-gradient(rgba(57, 51, 153, 0.39), rgba(157, 240, 233, 0.32)), url("https://hackers.nyc3.cdn.digitaloceanspaces.com/tableaubg.jpg") !important;
   height: 100% !important;
   background-size: cover !important;
   background-blend-mode: hard-light;
   height: 100% !important; }
+
+.row .col {
+  padding: 0 !important; }
 
 .export {
   display: block !important;
@@ -46,9 +53,13 @@ html {
   top: 10px !important;
   right: 10px !important;
   font-size: 2em !important;
-  color: white !important; }
+  color: white !important;
+  transition: all .3s ease-out; }
+  .export .export-icon {
+    font-size: 1em; }
   .export:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: .7; }
 
 table thead tr {
   background: #646483 !important;
@@ -82,7 +93,9 @@ table tbody {
   background: #eceff3;
   padding: 10px 30px;
   transition: all 0.3s ease-out;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  max-width: 49%;
+  overflow: hidden; }
   @media (max-width: 600px) {
     .home-template .download {
       width: 100% !important; } }

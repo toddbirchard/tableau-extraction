@@ -16,6 +16,8 @@ libsass="*"
 pandas="*"
 gunicorn="*"
 mysql-connector-python="*"
+flask_cdn="*"
+jsmin="*"
 
 [requires]
 python_version = "3.7.2"
