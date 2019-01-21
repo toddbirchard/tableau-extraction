@@ -22,8 +22,9 @@ def entry():
     tableau_view_extractor = tableau.ExtractTableauView()
     xml = tableau_view_extractor.initialize_tableau_request()
     token = tableau_view_extractor.get_token(xml)
-    site = tableau_view_extractor.get_site(xml)
-    views = tableau_view_extractor.list_views(site, xml, token)
+    site_id = tableau_view_extractor.get_site(xml, 'id')
+    site_name = tableau_view_extractor.get_site(xml, 'contentUrl')
+    views = tableau_view_extractor.list_views(site_id, xml, token)
     return render_template(
         'index.html',
         title="Here are your views.",
@@ -31,7 +32,8 @@ def entry():
         views=views,
         token=token,
         xml=xml,
-        site=site
+        site=site_id,
+        site_name=site_name
     )
 
 

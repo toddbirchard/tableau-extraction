@@ -1,11 +1,16 @@
 <header>
-  <nav>
-    <ul>
-      <i class="fal fa-chart-pie"></i>
-      <li>Site 1</li>
-      <li>Site 2</li>
-      <li>Site 3</li>
-    </ul>
-  </nav>
-  <h1>{{title}}</h1>
+  <div class="leftnav">
+    <nav>
+      <ul>
+        <i class="fal fa-chart-pie"></i>
+        <li>Site 1</li>
+        <li>Site 2</li>
+        <li>Site 3</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="rightnav">
+    <a href="{{ url_for('home.export') }}" class="export rightnav"><i class="fal fa-file-export"></i></a>
+  </div>
+  <h1>{{site_name}}</h1>
 </header>

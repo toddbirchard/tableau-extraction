@@ -6,8 +6,10 @@ header {
     width: 23%;
     color: white;
     background: none;
-    padding: 20px;
-    box-shadow: none !important; }
+    padding: 20px 30px;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center; }
   header ul {
     list-style: none;
     width: 100%;
@@ -20,12 +22,25 @@ header {
       line-height: 1;
       height: fit-content;
       font-size: 1em !important;
-      font-weight: 100; }
+      font-weight: 400; }
   header i,
   header .fal, header .far {
     color: white;
-    font-size: 2.3em;
+    font-size: 2em;
     height: fit-content; }
+  header .rightnav {
+    float: right; }
+    header .rightnav .export {
+      display: block !important;
+      position: absolute !important;
+      width: 40px !important;
+      height: 40px !important;
+      top: 17px !important;
+      right: 17px !important;
+      font-size: 1em !important;
+      color: white !important; }
+      header .rightnav .export:hover {
+        cursor: pointer; }
 
 body,
 html {
@@ -37,18 +52,6 @@ html {
   background-size: cover !important;
   background-blend-mode: hard-light;
   height: 100% !important; }
-
-.export {
-  display: block !important;
-  position: absolute !important;
-  width: 40px !important;
-  height: 40px !important;
-  top: 10px !important;
-  right: 10px !important;
-  font-size: 2em !important;
-  color: white !important; }
-  .export:hover {
-    cursor: pointer; }
 
 table thead tr {
   background: #646483 !important;
@@ -90,6 +93,8 @@ table tbody {
     color: white !important;
     background: #039be5;
     cursor: pointer; }
+    .home-template .download:hover li {
+      color: white; }
 
 .home-template .key {
   font-weight: 900;
@@ -208,7 +213,7 @@ table tbody {
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 20px;
-  font-weight: 400; }
+  font-weight: 100; }
 
 .home-template a {
   display: flex !important;
@@ -228,7 +233,8 @@ table tbody {
   height: 80%;
   overflow: hidden;
   position: relative;
-  padding: 30px; }
+  padding: 30px;
+  box-shadow: 5px 5px 30px #0d1141; }
   @media (max-width: 600px) {
     .home-template .extended-container {
       margin: 15px auto 0;

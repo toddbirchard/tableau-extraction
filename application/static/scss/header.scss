@@ -7,8 +7,10 @@ header {
     width: 23%;
     color: white;
     background: none;
-    padding:20px;
+    padding: 20px 30px;
     box-shadow: none !important;
+    display: flex;
+    align-items: center;
   }
 
   ul {
@@ -24,14 +26,33 @@ header {
       line-height: 1;
       height: fit-content;
       font-size: 1em !important;
-      font-weight: 100;
+      font-weight: 400;
     }
   }
 
   i,
   .fal, .far {
     color: white;
-    font-size: 2.3em;
+    font-size: 2em;
     height: fit-content;
+  }
+
+  .rightnav {
+    float: right;
+
+    .export {
+      display: block !important;
+      position: absolute !important;
+      width: 40px !important;
+      height: 40px !important;
+      top: 17px !important;
+      right: 17px !important;
+      font-size: 1em !important;
+      color: white !important;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

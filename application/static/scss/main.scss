@@ -10,20 +10,7 @@ html {
   height: 100% !important;
 }
 
-.export {
-  display: block !important;
-  position: absolute !important;
-  width: 40px !important;
-  height: 40px !important;
-  top: 10px !important;
-  right: 10px !important;
-  font-size: 2em !important;
-  color: white !important;
 
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 table {
   thead {
@@ -81,6 +68,10 @@ table {
       color: white !important;
       background: #039be5;
       cursor: pointer;
+
+      li {
+        color: white;
+      }
     }
   }
 
@@ -236,7 +227,7 @@ table {
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 100;
   }
 
   a {
@@ -260,6 +251,7 @@ table {
     overflow: hidden;
     position: relative;
     padding: 30px;
+    box-shadow: 5px 5px 30px #0d1141;
     @media(max-width: 600px) {
       margin: 15px auto 0;
       width: 95%;
