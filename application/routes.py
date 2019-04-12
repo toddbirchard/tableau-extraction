@@ -12,8 +12,18 @@ js = Bundle('js/*.js', filters='jsmin', output='dist/packed.js')
 scss = Bundle('scss/*.scss', filters='libsass', output='dist/all.css')
 assets.register('scss_all', scss)
 assets.register('js_all', js)
-scss.build()
-js.build()
+scss.build(force=True, disable_cache=True)
+js.build(force=True, disable_cache=True)
+
+
+@home_blueprint.route('/nav.html', methods=['GET'])
+def nav():
+    """Builds nav before every template render."""
+    tableau_view_extractor = tableau.ExtractTableauView()
+    xml = tableau_view_extractor.initialize_tableau_request()
+    token = tableau_view_extractor.get_token(xml)
+    all_sites = tableau_view_extractor.list_sites(token)
+    return render_template('nav.html', all_sites=all_sites)
 
 
 @home_blueprint.route('/', methods=['GET', 'POST'])
@@ -22,9 +32,15 @@ def entry():
     tableau_view_extractor = tableau.ExtractTableauView()
     xml = tableau_view_extractor.initialize_tableau_request()
     token = tableau_view_extractor.get_token(xml)
+<<<<<<< HEAD
     site_id = tableau_view_extractor.get_site(xml, 'id')
     site_name = tableau_view_extractor.get_site(xml, 'contentUrl')
     views = tableau_view_extractor.list_views(site_id, xml, token)
+=======
+    all_sites = tableau_view_extractor.list_sites(token)
+    site = tableau_view_extractor.get_site(xml)
+    views = tableau_view_extractor.list_views(site, xml, token)
+>>>>>>> 3e4409a0c9e2cf8b730cafa97085758f4fcc5588
     return render_template(
         'index.html',
         title="Here are your views.",
@@ -32,8 +48,13 @@ def entry():
         views=views,
         token=token,
         xml=xml,
+<<<<<<< HEAD
         site=site_id,
         site_name=site_name
+=======
+        site=site,
+        all_sites=all_sites
+>>>>>>> 3e4409a0c9e2cf8b730cafa97085758f4fcc5588
     )
 
 

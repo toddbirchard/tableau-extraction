@@ -26,6 +26,25 @@ class ExtractTableauView:
         return view_df
 
     @classmethod
+    def list_sites(cls, token):
+        """Get all sites belonging to a Tableau Instance."""
+        headers = {'X-Tableau-Auth': token}
+        req = requests.get(cls.__baseurl + '/api/3.2/sites', headers=headers)
+        root = ET.fromstring(req.content)
+        sites_arr = []
+        for child in root.iter('*'):
+            if child.tag == '{http://tableau.com/api}sites':
+                for site in child:
+                    site_dict = {
+                        'name': site.attrib.get('name'),
+                        'id': site.attrib.get('id'),
+                        'contentURL': site.attrib.get('contentUrl'),
+                        'state': site.attrib.get('state')
+                    }
+                    sites_arr.append(site_dict)
+        return sites_arr
+
+    @classmethod
     def list_views(cls, site, xml, token):
         """List all views belonging to a Tableau Site."""
         headers = {'X-Tableau-Auth': token}
