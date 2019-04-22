@@ -9,14 +9,13 @@ verify_ssl = true
 requests="*"
 flask_sqlalchemy="*"
 flask="*"
-configparser="*"
 flask_redis="*"
 flask_assets="*"
 libsass="*"
 pandas="*"
 gunicorn="*"
-mysql-connector-python="*"
+pymysql="*"
 jsmin="*"
 
 [requires]
-python_version = "3.7.2"
+python_version = "3.7"

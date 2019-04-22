@@ -4,3 +4,4 @@ view.csv
 .webassets-cache
 img
 .DS_Store
+.env
