@@ -20,7 +20,9 @@ class ExtractTableauView:
         headers = {'X-Tableau-Auth': token,
                    'Content-Type': 'text/csv'
                    }
-        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + str(site) +'/views/' + str(view) + '/data', headers=headers, stream=True)
+        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + str(site) +'/views/' + str(view) + '/data',
+                           headers=headers,
+                           stream=True)
         csv_text = req.text
         view_df = pd.read_csv(io.StringIO(csv_text), header=0)
         return view_df
@@ -48,7 +50,9 @@ class ExtractTableauView:
     def list_views(cls, site, xml, token):
         """List all views belonging to a Tableau Site."""
         headers = {'X-Tableau-Auth': token}
-        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + site + '/views', auth=(cls.__username, cls.__password), headers=headers)
+        req = requests.get(cls.__baseurl + '/api/3.2/sites/' + site + '/views',
+                           auth=(cls.__username, cls.__password),
+                           headers=headers)
         root = ET.fromstring(req.content)
         views_arr = []
         for child in root.iter('*'):
@@ -85,7 +89,16 @@ class ExtractTableauView:
     def initialize_tableau_request(cls):
         """Retrieve core XML for interacting with Tableau."""
         headers = {'Content-Type': 'application/xml'}
-        body = '<tsRequest><credentials name="' + cls.__username + '" password="' + cls.__password + '" ><site contentUrl="' + cls.__contenturl + '" /></credentials></tsRequest>'
-        req = requests.post(cls.__baseurl + '/api/3.2/auth/signin', auth=(cls.__username, cls.__password), headers=headers, data=body)
+        body = '<tsRequest><credentials name="' \
+               + cls.__username \
+               + '" password="' \
+               + cls.__password \
+               + '" ><site contentUrl="'\
+               + cls.__contenturl \
+               + '" /></credentials></tsRequest>'
+        req = requests.post(cls.__baseurl + '/api/3.2/auth/signin',
+                            auth=(cls.__username, cls.__password),
+                            headers=headers,
+                            data=body)
         root = ET.fromstring(req.content)
         return root
