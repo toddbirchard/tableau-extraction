@@ -1,3 +1,4 @@
+"""Initialize application."""
 from flask import Flask
 from flask_redis import FlaskRedis
 from flask_sqlalchemy import SQLAlchemy
@@ -8,7 +9,7 @@ r = FlaskRedis()
 
 
 def create_app():
-    """Initialize application."""
+    """Initialize Flask app UI."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object("config.Config")
 

@@ -1,3 +1,4 @@
+"""Define forms for user-input."""
 from wtforms import Form, PasswordField, SelectField, StringField, SubmitField
 from wtforms.validators import DataRequired, Length, Optional
 
