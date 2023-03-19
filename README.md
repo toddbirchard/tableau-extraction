@@ -11,7 +11,7 @@
 
 Application that provides an interface for extracting data from a Tableau Server instance. This project is part of a series of exercises that attempt to make data on self-hosted Tableau instances more available. Find the accompanying blog post [here](https://hackersandslackers.com/hostile-extraction-of-tableau-server-data/).
 
-![Tableau](https://github.com/toddbirchard/tableau-etl/blob/master/application/static/img/tableaugithub.jpg)
+![Tableau View Extraction](./.github/img/tableauextraction_v2@2x.jpg)
 
 ## Status
 

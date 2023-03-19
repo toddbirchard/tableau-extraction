@@ -21,7 +21,12 @@ class ExtractTableauView:
         """Extract contents of a single view."""
         headers = {"X-Tableau-Auth": token, "Content-Type": "text/csv"}
         req = requests.get(
-            cls.__baseurl + "/api/3.2/sites/" + str(site) + "/views/" + str(view) + "/data",
+            cls.__baseurl
+            + "/api/3.2/sites/"
+            + str(site)
+            + "/views/"
+            + str(view)
+            + "/data",
             headers=headers,
             stream=True,
         )
@@ -65,7 +70,9 @@ class ExtractTableauView:
                     view_dict = {
                         "name": view.attrib.get("name"),
                         "id": view.attrib.get("id"),
-                        "url": cls.__baseurl + "/" + view.attrib.get("contentUrl"),
+                        "url": cls.__baseurl
+                        + "/"
+                        + view.attrib.get("contentUrl"),
                         "created": view.attrib.get("createdAt"),
                         "updated": view.attrib.get("updatedAt"),
                     }

@@ -15,11 +15,13 @@
 
 # Python pycache:
 __pycache__/
+
 # Ignored by the build system
 /setup.cfg
 
+# Pipfile
 Pipfile
 Pipfile.lock
 
-
+# Static cache
 .webassets-cache

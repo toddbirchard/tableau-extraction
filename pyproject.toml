@@ -46,7 +46,7 @@ profile = "black"
 src_paths = ["tableau_view_extractor", "config"]
 
 [tool.black]
-line-length = 100
+line-length = 80
 
 [tool.pylint.'MESSAGES CONTROL']
 disable="C0103,C0301,W0703,W0621"

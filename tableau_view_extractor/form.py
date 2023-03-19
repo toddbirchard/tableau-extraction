@@ -1,10 +1,4 @@
-from wtforms import (
-    Form,
-    PasswordField,
-    SelectField,
-    StringField,
-    SubmitField,
-)
+from wtforms import Form, PasswordField, SelectField, StringField, SubmitField
 from wtforms.validators import DataRequired, Length, Optional
 
 
@@ -12,9 +6,14 @@ class DatabaseForm(Form):
     """Database connection Form."""
 
     flavor = SelectField(
-        "Database Flavor", validators=[DataRequired(message=("Please select a type of database."))]
+        "Database Flavor",
+        validators=[
+            DataRequired(message=("Please select a type of database."))
+        ],
     )
-    host = StringField("Email", validators=[DataRequired(message=("Please enter a host."))])
+    host = StringField(
+        "Email", validators=[DataRequired(message=("Please enter a host."))]
+    )
     port = StringField(
         "Port",
         validators=[
@@ -23,13 +22,18 @@ class DatabaseForm(Form):
         ],
     )
     user = StringField(
-        "Username", validators=[Length(min=6, message=("Please enter a valid email address."))]
+        "Username",
+        validators=[
+            Length(min=6, message=("Please enter a valid email address."))
+        ],
     )
     password = PasswordField(
-        "DB Password", validators=[DataRequired(message="Please enter a password.")]
+        "DB Password",
+        validators=[DataRequired(message="Please enter a password.")],
     )
     database = StringField(
-        "Website", validators=[DataRequired(message=("Please enter a database name."))]
+        "Website",
+        validators=[DataRequired(message=("Please enter a database name."))],
     )
     schema = StringField("Schema", validators=[Optional()])
     submit = SubmitField("Connect")

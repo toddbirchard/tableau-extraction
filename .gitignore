@@ -111,17 +111,12 @@ ENV/
 # Etc
 .DS_Store
 .idea
-.idea/*
-.idea/.gitignore
-.idea/acleebot.iml
-.idea/inspectionProfiles/
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
+.idea/
+.vscode/
+
 .uwsgi_plugins_builder
 
 # Credentials
-HackersAndSlackers-b7835abe15a0.json
 gcloud.json
 creds/
 *.conf

@@ -7,10 +7,7 @@ from flask_assets import Bundle, Environment
 from . import database, tableau
 
 home_blueprint = Blueprint(
-    "home", 
-    __name__,
-    template_folder="templates",
-    static_folder="static"
+    "home", __name__, template_folder="templates", static_folder="static"
 )
 
 assets = Environment(app)
@@ -82,7 +79,13 @@ def view():
 def export():
     """Export view to external database."""
     view_df = pd.read_csv("application/static/data/view.csv")
-    view_df.to_sql(name="temp", con=database.engine, if_exists="replace", chunksize=50, index=True)
+    view_df.to_sql(
+        name="temp",
+        con=database.engine,
+        if_exists="replace",
+        chunksize=50,
+        index=True,
+    )
     return render_template(
         "export.html",
         title="Success!",
