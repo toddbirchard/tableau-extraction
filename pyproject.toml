@@ -25,6 +25,7 @@ flake8 = "*"
 pylint = "*"
 uwsgi = "^2.0.21"
 python-dotenv = "^1.0.0"
+loguru = "^0.6.0"
 
 
 [tool.poetry.scripts]

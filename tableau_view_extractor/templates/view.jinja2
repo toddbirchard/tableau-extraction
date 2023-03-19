@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.jinja2" %}
 
 {% block content %}
 <div class="extended-container {{template}}">
@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col s12">
         <h1>{{title}}</h1>
-        <p>Successly exported!</p>
+        {{view_df}}
       </div>
     </div>
   </div>

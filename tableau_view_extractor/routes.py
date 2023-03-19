@@ -19,14 +19,14 @@ scss.build(force=True, disable_cache=True)
 js.build(force=True, disable_cache=True)
 
 
-@home_blueprint.route("/nav.html", methods=["GET"])
+@home_blueprint.route("/nav.jinja2", methods=["GET"])
 def nav():
     """Build nav before every template render."""
     tableau_view_extractor = tableau.ExtractTableauView()
     xml = tableau_view_extractor.initialize_tableau_request()
     token = tableau_view_extractor.get_token(xml)
     all_sites = tableau_view_extractor.list_sites(token)
-    return render_template("nav.html", all_sites=all_sites)
+    return render_template("nav.jinja2", all_sites=all_sites)
 
 
 @home_blueprint.route("/", methods=["GET", "POST"])
@@ -41,7 +41,7 @@ def entry():
     all_sites = tableau_view_extractor.list_sites(token)
     site = tableau_view_extractor.get_site(xml)
     return render_template(
-        "index.html",
+        "index.jinja2",
         title="Here are your views.",
         template="home-template",
         views=views,
@@ -64,7 +64,7 @@ def view():
     view_df = tableau_view_extractor.get_view(site, xml, view, token)
     view_df.to_csv("application/static/data/view.csv")
     return render_template(
-        "view.html",
+        "view.jinja2",
         title="Your View",
         template="home-template",
         view=view,
@@ -87,7 +87,7 @@ def export():
         index=True,
     )
     return render_template(
-        "export.html",
+        "export.jinja2",
         title="Success!",
         template="success-template",
     )

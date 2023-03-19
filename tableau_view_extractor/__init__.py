@@ -2,6 +2,7 @@
 from flask import Flask
 from flask_redis import FlaskRedis
 from flask_sqlalchemy import SQLAlchemy
+from log import LOGGER
 
 # Set global entities
 db = SQLAlchemy()
@@ -15,18 +16,23 @@ def create_app():
 
     with app.app_context():
         # Initiate globals
-        db.init_app(app)
-        r.init_app(app)
+        try:
+            db.init_app(app)
+            r.init_app(app)
 
-        # Set global contexts
-        r.set("uri", app.config["SQLALCHEMY_DATABASE_URI"])
-        r.set("baseurl", app.config["REDIS_HOST"])
-        r.set("username", app.config["REDIS_USERNAME"])
-        r.set("password", app.config["REDIS_PASSWORD"])
+            # Set global contexts
+            r.set("uri", app.config["SQLALCHEMY_DATABASE_URI"])
+            r.set("baseurl", app.config["REDIS_HOST"])
+            r.set("username", app.config["REDIS_USERNAME"])
+            r.set("password", app.config["REDIS_PASSWORD"])
 
-        # Import our modules
-        from . import routes
+            # Import our modules
+            from . import routes
 
-        app.register_blueprint(routes.home_blueprint)
+            app.register_blueprint(routes.home_blueprint)
 
-        return app
+            LOGGER.success(f"Application started: {app}")
+
+            return app
+        except Exception as e:
+            LOGGER.success(f"Application failed to start: {e}")

@@ -36,7 +36,7 @@ $(VIRTUAL_ENV):
 
 .PHONY: run
 run: env
-	  $(LOCAL_PYTHON) -m uwsgi wsgi:app
+	  $(LOCAL_PYTHON) -m flask run
 
 
 .PHONY: install

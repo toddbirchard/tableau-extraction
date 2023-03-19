@@ -1,0 +1,22 @@
+<header>
+
+  <div class="leftNav">
+  <nav>
+    <ul>
+      <i class="fal fa-chart-pie logo"></i>
+      {% for site in all_sites %}
+        <li><a>{{site.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+
+<div class="rightNav">
+  {%- if request.path == "/view" %}
+    <a href="{{ url_for('home.export') }}?token={{token}}&site={{site}}&view={{view.id}}&xml={{xml}}" class="export"><i class="far fa-file-export export-icon"></i></a>
+  {% endif %}
+</div>
+
+</div>
+  <h1>{{title}}</h1>
+</header>

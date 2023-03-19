@@ -5,14 +5,9 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 
 from . import r
 
-
 engine = create_engine(r.get("uri"), convert_unicode=True, echo=False)
 db_session = scoped_session(
-    sessionmaker(
-        autocommit=True,
-        autoflush=False,
-        bind=engine
-    )
+    sessionmaker(autocommit=True, autoflush=False, bind=engine)
 )
 
 Base = declarative_base()
