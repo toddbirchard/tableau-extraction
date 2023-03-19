@@ -1,17 +1,15 @@
 # Tableau View Extractor
 
-![Python](https://img.shields.io/badge/Python-3.7.2-blue.svg?logo=python&longCache=true&logoColor=white&colorB=23a8e2&style=flat-square&colorA=36363e)
-![Flask](https://img.shields.io/badge/Flask-1.0.2-blue.svg?longCache=true&logo=flask&style=flat-square&logoColor=white&colorB=23a8e2&colorA=36363e)
-![Flask-Redis](https://img.shields.io/badge/Flask--Redis-0.3.0-blue.svg?longCache=true&logo=redis&style=flat-square&logoColor=white&colorB=D82C20&colorA=36363e)
-![Flask-SQLAlchemy](https://img.shields.io/badge/Flask--SQLAlchemy-2.3.2-red.svg?longCache=true&style=flat-square&logo=scala&logoColor=white&colorA=36363e)
-![Pandas](https://img.shields.io/badge/Pandas-0.23.4-blue.svg?logo=python&longCache=true&logoColor=white&colorB=23a8e2&style=flat-square&colorA=36363e)
-![Libsass](https://img.shields.io/badge/Libsass-v0.17.0-pink.svg?longCache=true&logo=google&longCache=true&style=flat-square&logoColor=white&colorA=36363e&colorB=bb50d7&logo=sass&logoColor=white)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat-square&colorA=36363e)
-[![GitHub Issues](https://img.shields.io/github/issues/toddbirchard/tableau-extraction.svg?style=flat-square&colorA=36363e)](https://github.com/toddbirchard/tableau-extraction/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/toddbirchard/tableau-extraction.svg?style=flat-square&colorB=e3bb18&colorA=36363e)](https://github.com/toddbirchard/tableau-extraction/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/tableau-extraction.svg?style=flat-square&colorA=36363e)](https://github.com/toddbirchard/tableau-extraction/network)
+![Python](https://img.shields.io/badge/python-^3.8-blue.svg?longCache=true&style=flat-square&colorA=4c566a&colorB=5e81ac&logo=Python&logoColor=white)
+![Tableau Server Client](https://img.shields.io/badge/tableauserverclient-0.25-blue.svg?longCache=true&style=flat-square&colorA=4c566a&colorB=5e81ac&logo=ChatBot&logoColor=white)
+![Requests](https://img.shields.io/badge/Requests-^v2.28.1-red.svg?longCache=true&style=flat-square&colorA=4c566a&colorB=5e81ac&logo=Python&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-^2.0.0-red.svg?longCache=true&style=flat-square&logo=scala&logoColor=white&colorA=4c566a&colorB=bf616a)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat-square&colorA=4c566a&logo=GitHub&colorB=a3be8c)
+[![GitHub Issues](https://img.shields.io/github/issues/toddbirchard/tableau-extraction.svg?style=flat-square&colorA=4c566a&logo=GitHub&colorB=ebcb8b)](https://github.com/toddbirchard/tableau-extraction/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/toddbirchard/tableau-extraction.svg?style=flat-square&colorA=4c566a&logo=GitHub&colorB=ebcb8b)](https://github.com/toddbirchard/tableau-extraction/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/toddbirchard/tableau-extraction.svg?style=flat-square&colorA=4c566a&logo=GitHub&colorB=ebcb8b)](https://github.com/toddbirchard/tableau-extraction/network)
 
-A Flask application which extends Tableau to be used as an ETL tool. To learn more about the purpose of this project, take a look at our blog post: [The Hostile Extraction of Tableau Server Data](https://hackersandslackers.com/hostile-extraction-of-tableau-server-data/)
+Application that provides an interface for extracting data from a Tableau Server instance. This project is part of a series of exercises that attempt to make data on self-hosted Tableau instances more available. Find the accompanying blog post [here](https://hackersandslackers.com/hostile-extraction-of-tableau-server-data/).
 
 ![Tableau](https://github.com/toddbirchard/tableau-etl/blob/master/application/static/img/tableaugithub.jpg)
 
